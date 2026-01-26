@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo Tàng Sài Gòn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/map/hcm.css">
+</head>
+<body class="location-page">
+    <!-- Background Image -->
+    <div class="page-background" style="background-image: url('../../assets/images/HCM/b066458a-ae22-49b4-8dbc-098b1097bcff.png'); background-attachment: fixed; background-size: cover; background-position: center;"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="location.href='../../index.html'" style="cursor: pointer;">
+                <div class="logo-image">
+                    <img src="../../assets/images/z7466353692132_c4290ee6f126bd5eeb17054044c74d9d.jpg" alt="Logo VN">
+                </div>
+                <div class="logo-text">
+                    <h1>Bảo Tàng Lịch Sử Việt Nam</h1>
+                    <p>Vietnamese History Museum</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Trang Chủ</a></li>
+                <li><a href="../../pages/timeline.html">Dòng Lịch Sử</a></li>
+                <li><a href="../../pages/map.html" class="active">Bản Đồ Bảo Tàng</a></li>
+                <li><a href="../../pages/quiz.html">Kiểm Tra</a></li>
+                <li><a href="../../pages/progress.html">Tiến Trình</a></li>
+                <li><a href="../../pages/login.html">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-location">
+        <!-- Header -->
+        <section class="location-header">
+            <button class="btn-back" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i> Quay Lại
+            </button>
+            <div class="header-content">
+                <h1>Bảo Tàng Sài Gòn</h1>
+                <p class="header-location"><i class="fas fa-map-marker-alt"></i> Sài Gòn, TP. Hồ Chí Minh</p>
+            </div>
+        </section>
+
+        <!-- Video Hero Section -->
+        <section class="video-hero-section">
+            <div class="video-hero-wrapper">
+                <div class="video-container">
+                    <video id="mainVideo" controls poster="../../assets/images/HCM/bao-tang-ho-chi-minh-01-1699763541.jpeg">
+                        <source src="../../assets/images/HCM/snaptik.vn_pEWX7.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="video-info-box">
+                    <h2>Bảo Tàng lịch sử Hồ Chí Minh</h2>
+                    <p class="info-desc">
+                        Bảo tàng Hồ Chí Minh là không gian trưng bày và nghiên cứu của dân tộc Việt Nam. Tại đây, hiện vật,
+                          tài liệu và hình ảnh được giới thiệu sinh động giúp khách tham quan hiểu rõ hơn về hành 
+                          trình đấu tranh giải phóng dân tộc và sự nghiệp xây dựng và bảo vệ Tổ quốc. 
+                    </p>
+                    <div class="video-meta">
+                        <span><i class="fas fa-clock"></i> 8:45</span>
+                        <span><i class="fas fa-image"></i> 24 hiện vật</span>
+                        <span><i class="fas fa-eye"></i> 2.3K lượt xem</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Title -->
+        <h2 class="section-title">CÁC HIỆN VẬT QUÝ BÁU</h2>
+
+        <!-- Artifacts List - So le nhau -->
+        <div class="artifacts-list">
+            <!-- Artifact 1 - Ảnh trái, Ghi chú phải -->
+            <div class="artifact-row artifact-row-1">
+                <div class="artifact-item-image">
+                    <div class="artifact-card" onclick="openArtifactModal(0)">
+                        <img src="../../assets/images/HCM/Picture27.png" alt="Công Cụ Đá Mài" class="artifact-img">
+                        <div class="artifact-label">
+                            <h3>Công Cụ Đá Mài</h3>
+                            <p>Thời Tiền Sa Huỳnh</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artifact-item-note">
+                    <div class="artifact-note-box">
+                        <h3>Công Cụ Đá Mài</h3>
+                        <p class="note-period">Thời Tiền Sa Huỳnh • 3000 năm</p>
+                        <p class="note-desc">Các công cụ đá mài cho thấy cư dân cổ Việt Nam đang chuyển từ cuộc sống thu lượm sang sản xuất nông nghiệp. Những công cụ này giúp xay lúa, nghiền hạt.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-ruler"></i> 10-15cm</span>
+                            <span><i class="fas fa-gem"></i> Đá</span>
+                        </div>
+                        <button class="btn-view-note" onclick="openArtifactModal(0)">Xem Chi Tiết →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artifact 2 - Ghi chú trái, Ảnh phải -->
+            <div class="artifact-row artifact-row-2">
+                <div class="artifact-item-note">
+                    <div class="artifact-note-box">
+                        <h3>Tượng Người Múa Thế Kỷ X</h3>
+                        <p class="note-period">Thế Kỷ X • 1000 năm</p>
+                        <p class="note-desc">Tượng người múa thể hiện đời sống văn hóa và nghệ thuật của triều đại. Điệu múa trong lễ hội và các sự kiện quan trọng của xã hội cổ đại.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-ruler"></i> 25cm</span>
+                            <span><i class="fas fa-gem"></i> Đất nung</span>
+                        </div>
+                        <button class="btn-view-note" onclick="openArtifactModal(1)">Xem Chi Tiết →</button>
+                    </div>
+                </div>
+                <div class="artifact-item-image">
+                    <div class="artifact-card" onclick="openArtifactModal(1)">
+                        <img src="../../assets/images/HCM/Picture30.png" alt="Tượng Người Múa" class="artifact-img">
+                        <div class="artifact-label">
+                            <h3>Tượng Người Múa Thế Kỷ X</h3>
+                            <p>Thế Kỷ X</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artifact 3 - Ảnh trái, Ghi chú phải -->
+            <div class="artifact-row artifact-row-1">
+                <div class="artifact-item-image">
+                    <div class="artifact-card" onclick="openArtifactModal(2)">
+                        <img src="../../assets/images/HCM/Picture29.png" alt="Trận Bạch Đằng" class="artifact-img">
+                        <div class="artifact-label">
+                            <h3>Trận Thủy Chiến Bạch Đằng</h3>
+                            <p>Năm 1288</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artifact-item-note">
+                    <div class="artifact-note-box">
+                        <h3>Trận Thủy Chiến Bạch Đằng</h3>
+                        <p class="note-period">Năm 1288 • 736 năm</p>
+                        <p class="note-desc">Trận thủy chiến Bạch Đằng năm 1288 chấn động thế giới, đánh bại quân Mông Cổ. Chiến công huy hoàng của Trần Hưng Đạo và quân dân Việt Nam.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-shield"></i> Chiến tranh</span>
+                            <span><i class="fas fa-crown"></i> Triều Trần</span>
+                        </div>
+                        <button class="btn-view-note" onclick="openArtifactModal(2)">Xem Chi Tiết →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artifact 4 - Ghi chú trái, Ảnh phải -->
+            <div class="artifact-row artifact-row-2">
+                <div class="artifact-item-note">
+                    <div class="artifact-note-box">
+                        <h3>Triều Tiền Lê - Lê Hoàn</h3>
+                        <p class="note-period">Năm 981 • 1043 năm</p>
+                        <p class="note-desc">Tiếp nối triều Đinh, Lê Hoàn lên ngôi vua và lập ra triều Tiền Lê năm 981. Kỳ này là thời kỳ phát triển mạnh mẽ của nhà nước Việt.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-crown"></i> Vua Lê Hoàn</span>
+                            <span><i class="fas fa-flag"></i> Triều Lê</span>
+                        </div>
+                        <button class="btn-view-note" onclick="openArtifactModal(3)">Xem Chi Tiết →</button>
+                    </div>
+                </div>
+                <div class="artifact-item-image">
+                    <div class="artifact-card" onclick="openArtifactModal(3)">
+                        <img src="../../assets/images/HCM/Picture28.png" alt="Triều Tiền Lê" class="artifact-img">
+                        <div class="artifact-label">
+                            <h3>Triều Tiền Lê - Lê Hoàn</h3>
+                            <p>Năm 981</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artifact 5 - Ảnh trái, Ghi chú phải -->
+            <div class="artifact-row artifact-row-1">
+                <div class="artifact-item-image">
+                    <div class="artifact-card" onclick="openArtifactModal(4)">
+                        <img src="../../assets/images/HCM/Picture31.png" alt="Hộp Sắc Phong" class="artifact-img">
+                        <div class="artifact-label">
+                            <h3>Hộp Đựng Sắc Phong Nguyễn</h3>
+                            <p>Thế Kỷ XVIII-XIX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artifact-item-note">
+                    <div class="artifact-note-box">
+                        <h3>Hộp Đựng Sắc Phong Nguyễn</h3>
+                        <p class="note-period">Thế Kỷ XVIII-XIX • 200-300 năm</p>
+                        <p class="note-desc">Hộp đựng sắc phong làm bằng gỗ phủ sơn thời Nguyễn, chứa các chiếu chỉ hoàng đế. Thể hiện quyền lực hoàng gia của triều đại Nguyễn.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-ruler"></i> 30x20cm</span>
+                            <span><i class="fas fa-gem"></i> Gỗ sơn</span>
+                        </div>
+                        <button class="btn-view-note" onclick="openArtifactModal(4)">Xem Chi Tiết →</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artifact 6 - Ghi chú trái, Ảnh phải -->
+            <div class="artifact-row artifact-row-2">
+                <div class="artifact-item-note">
+                    <div class="artifact-note-box">
+                        <h3>Bộ Sưu Tập Vương Hồng Sển</h3>
+                        <p class="note-period">Triều Nguyễn • 200 năm</p>
+                        <p class="note-desc">Những tác phẩm quý báu từ bộ sưu tập cá nhân của Vương Hồng Sển. Bao gồm tranh, sơn mài, tượng và nhiều công cụ nghệ thuật quý hiếm.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-palette"></i> Nghệ thuật</span>
+                            <span><i class="fas fa-image"></i> Đa chủng loại</span>
+                        </div>
+                        <button class="btn-view-note" onclick="openArtifactModal(5)">Xem Chi Tiết →</button>
+                    </div>
+                </div>
+                <div class="artifact-item-image">
+                    <div class="artifact-card" onclick="openArtifactModal(5)">
+                        <img src="../../assets/images/HCM/Picture32.png" alt="Bộ Sưu Tập Vương Hồng Sển" class="artifact-img">
+                        <div class="artifact-label">
+                            <h3>Bộ Sưu Tập Vương Hồng Sển</h3>
+                            <p>Triều Nguyễn</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artifact 7 - Ảnh trái, Ghi chú phải -->
+            <div class="artifact-row artifact-row-1">
+                <div class="artifact-item-image">
+                    <div class="artifact-card" onclick="openArtifactModal(6)">
+                        <img src="../../assets/images/HCM/Picture33.png" alt="Khẩu Thần Công" class="artifact-img">
+                        <div class="artifact-label">
+                            <h3>Khẩu Thần Công Ngoài Trời</h3>
+                            <p>Triều Nguyễn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artifact-item-note">
+                    <div class="artifact-note-box">
+                        <h3>Khẩu Thần Công Ngoài Trời</h3>
+                        <p class="note-period">Triều Nguyễn • 200 năm</p>
+                        <p class="note-desc">Khẩu thần công được trưng bày ngoài trời, là một trong những công cụ chiến đấu quan trọng. Biểu tượng của sức mạnh quân sự thời phong kiến.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-shield"></i> Vũ khí</span>
+                            <span><i class="fas fa-gem"></i> Đồng/Sắt</span>
+                        </div>
+                        <button class="btn-view-note" onclick="openArtifactModal(6)">Xem Chi Tiết →</button>
+                    </div>
+                </div>
+            </div>
+
+          
+
+        <!-- Modal (giữ nguyên) -->
+        <div id="artifactModal" class="modal hidden">
+            <div class="modal-overlay" onclick="closeArtifactModal()"></div>
+            <div class="modal-content-location">
+                <button class="modal-close" onclick="closeArtifactModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <div class="modal-body-location">
+                    <div class="modal-left">
+                        <div class="artifact-main">
+                            <img id="modalImage" src="" alt="Hiện vật" class="modal-main-image">
+                        </div>
+                        <div class="artifact-gallery" id="artifactGallery"></div>
+                        <div class="artifact-video-section">
+                            <div class="video-wrapper">
+                                <video id="modalVideo" controls class="modal-video">
+                                    <source id="videoSource" src="" type="video/mp4">
+                                </video>
+                            </div>
+                            <p class="video-desc" id="videoDesc"></p>
+                        </div>
+                    </div>
+
+                    <div class="modal-right">
+                        <h2 id="modalTitle"></h2>
+                        <p class="modal-period" id="modalPeriod"></p>
+
+                        <div class="modal-info-grid">
+                            <div class="info-box">
+                                <label>Chất Liệu</label>
+                                <span id="modalMaterial"></span>
+                            </div>
+                            <div class="info-box">
+                                <label>Kích Thước</label>
+                                <span id="modalSize"></span>
+                            </div>
+                            <div class="info-box">
+                                <label>Thời Kỳ</label>
+                                <span id="modalTime"></span>
+                            </div>
+                            <div class="info-box">
+                                <label>Năm</label>
+                                <span id="modalYear"></span>
+                            </div>
+                        </div>
+
+                        <div class="modal-description">
+                            <h3>Mô Tả Chi Tiết</h3>
+                            <p id="modalDescription"></p>
+                        </div>
+
+                        <div class="modal-history">
+                            <h3>Lịch Sử</h3>
+                            <p id="modalHistory"></p>
+                        </div>
+
+                        <div class="modal-significance">
+                            <h3>Ý Nghĩa Lịch Sử</h3>
+                            <p id="modalSignificance"></p>
+                        </div>
+
+                        <button class="btn-close-modal" onclick="closeArtifactModal()">
+                            Đóng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về Chúng Tôi</h3>
+                <p>Bảo Tàng Lịch Sử Việt Nam là nơi bảo tồn và truyền dạy di sản lịch sử của dân tộc Việt.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Kết</h3>
+                <ul>
+                    <li><a href="../../pages/timeline.html">Dòng Lịch Sử</a></li>
+                    <li><a href="../../pages/map.html">Bản Đồ Bảo Tàng</a></li>
+                    <li><a href="../../pages/quiz.html">Kiểm Tra</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bảo Tàng Lịch Sử Việt Nam. Bảo Tồn Di Sản - Nơi Lịch Sử Sống.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/map/hcm.js"></script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo Tàng Lịch Sử Văn Hóa Hội An</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/map/hoian.css">
+</head>
+<body class="hoian-page">
+    <!-- Background -->
+    <div class="page-background" style="background-image: url('../../assets/images/b8618f4a-4ef7-4e62-b94b-a2a61d2bb8fb.png'); background-attachment: fixed; background-size: cover; background-position: center;"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="location.href='../../index.html'" style="cursor: pointer;">
+                <div class="logo-image">
+                    <img src="../../assets/images/z7466353692132_c4290ee6f126bd5eeb17054044c74d9d.jpg" alt="Logo">
+                </div>
+                <div class="logo-text">
+                    <h1>Bảo Tàng Hội An</h1>
+                    <p>Văn Hóa - Lịch Sử</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Trang Chủ</a></li>
+                <li><a href="../timeline.html">Dòng Lịch Sử</a></li>
+                <li><a href="../map.html" class="active">Bản Đồ</a></li>
+                <li><a href="../quiz.html">Kiểm Tra</a></li>
+                <li><a href="../login.html">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Container -->
+    <div class="container-hoian">
+        <!-- Header -->
+        <section class="location-header">
+            <button class="btn-back" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i> Quay Lại
+            </button>
+            <div class="header-content">
+                <h1>Bảo Tàng Hội An</h1>
+                <p class="header-location"><i class="fas fa-map-marker-alt"></i> Hội An, Quảng Nam</p>
+            </div>
+        </section>
+
+        <!-- Highlight Section -->
+        <section class="highlight-section">
+            <h2 class="highlight-title">HIỆN VẬT NỔI BẬT</h2>
+            
+            <div class="highlight-container">
+                <!-- Left: Video -->
+                <div class="highlight-item video-item">
+                        <div class="highlight-media">
+                            <video id="heroVideo" controls poster="../../assets/images/hoian/62553457_441495056671311_2106223215742287872_o.jpg">
+                                <source src="../../assets/images/hoian/snaptik.vn_qUsEk.mp4" type="video/mp4">
+                            </video>
+
+                            <div class="sound-icon" onclick="toggleSound()">
+                                🔊
+                            </div>
+                        </div>
+
+                    <div class="highlight-note">
+                        <h3>Tìm Hiểu Về Hội An</h3>
+                        <p> Hội An là nơi lưu giữ và tái hiện sống động lịch sử, văn hóa của đô thị cổ qua từng hiện vật và câu chuyện. Không gian trầm mặc bên dòng sông Hoài giúp du khách cảm nhận rõ nét chiều sâu di sản và nhịp sống xưa của Hội An.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-clock"></i> 12:34</span>
+                            <span><i class="fas fa-eye"></i> 5.2K lượt xem</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Image -->
+                <div class="highlight-item image-item">
+                    <div class="highlight-media">
+                        <img src="../../assets/images/hoian/Picture22.png" alt="Dấu Triện">
+                        <div class="image-overlay">
+                            <span class="badge-era">Đại Việt</span>
+                        </div>
+                    </div>
+                    <div class="highlight-note">
+                        <h3>Dấu Triện Thời Đại Việt</h3>
+                        <p>Dấu triện là công cụ quản lý hành chính quan trọng, được sử dụng để xác thực các chỉ thị chính thức. Hiện vật này cho thấy sự phát triển của nền hành chính trong thời kỳ Đại Việt.</p>
+                        <div class="note-meta">
+                            <span><i class="fas fa-calendar"></i> 1000 năm trước</span>
+                            <span><i class="fas fa-ruler"></i> 5x5cm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Title -->
+        <h2 class="section-title">TRƯNG BÀY HIỆN VẬT</h2>
+
+        <!-- Exhibitions Grid -->
+        <div class="exhibitions-grid">
+            <!-- Card 1 -->
+            <div class="exhibition-card" onclick="openArtifactModal(0)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(184,134,11,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture21.png');">
+                    <div class="card-badge">Sa Huỳnh</div>
+                </div>
+                <div class="card-content">
+                    <h3>Khuyên Tai 3 Mẫu</h3>
+                    <p class="card-period">Văn Hóa Sa Huỳnh • 2000 năm</p>
+                    <p class="card-desc">Bộ sưu tập khuyên tai tinh xảo</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="exhibition-card" onclick="openArtifactModal(1)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(139,69,19,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture22.png');">
+                    <div class="card-badge">Đại Việt</div>
+                </div>
+                <div class="card-content">
+                    <h3>Dấu Triện</h3>
+                    <p class="card-period">Thời Đại Việt • 1000 năm</p>
+                    <p class="card-desc">Công cụ quản lý hành chính</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="exhibition-card" onclick="openArtifactModal(2)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(25,25,112,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture23.png');">
+                    <div class="card-badge">Tàu Đắm</div>
+                </div>
+                <div class="card-content">
+                    <h3>Hiện Vật Gốm</h3>
+                    <p class="card-period">Cù Lao Chàm • 600-900 năm</p>
+                    <p class="card-desc">Gốm sứ khai quật từ biển</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="exhibition-card" onclick="openArtifactModal(3)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(0,100,100,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture19.png');">
+                    <div class="card-badge">Nhật Bản</div>
+                </div>
+                <div class="card-content">
+                    <h3>Đĩa Sứ Hizen</h3>
+                    <p class="card-period">Thế Kỷ XVII • 400 năm</p>
+                    <p class="card-desc">Sứ Hizen quý hiếm</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="exhibition-card" onclick="openArtifactModal(4)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(153,76,0,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture20.png');">
+                    <div class="card-badge">Nhật Bản</div>
+                </div>
+                <div class="card-content">
+                    <h3>Lộc Bình</h3>
+                    <p class="card-period">Hiện vật thời Đại Việt</p>
+                    <p class="card-desc">Lộc bình sứ quý hiếm</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="exhibition-card" onclick="openArtifactModal(5)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(220,20,60,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture24.png');">
+                    <div class="card-badge">Sa Huỳnh</div>
+                </div>
+                <div class="card-content">
+                    <h3>Đồ Trang Sức</h3>
+                    <p class="card-period">Văn Hóa Sa Huỳnh • 2000 năm</p>
+                    <p class="card-desc">Trang sức tinh xảo từ cổ</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="exhibition-card" onclick="openArtifactModal(6)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(47,79,79,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture25.png');">
+                    <div class="card-badge">Truyền Thống</div>
+                </div>
+                <div class="card-content">
+                    <h3>Hiện Vật Tiền Sa Huỳnh</h3>
+                    <p class="card-period">Bãi Ông • 3000 năm</p>
+                    <p class="card-desc">Hiện vật từ thời xưa</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="exhibition-card" onclick="openArtifactModal(7)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(85,85,85,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture15.png');">
+                    <div class="card-badge">Truyền Thống</div>
+                </div>
+                <div class="card-content">
+                    <h3>Múa Thiên Cẩu Gian</h3>
+                    <p class="card-period">Sinh Hoạt Hội An • Hiện Đại</p>
+                    <p class="card-desc">Tái hiện sinh hoạt truyền thống</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="exhibition-card" onclick="openArtifactModal(8)">
+                <div class="card-image" style="background: linear-gradient(135deg, rgba(102,51,0,0.6) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hoian/Picture16.png');">
+                    <div class="card-badge">Âm Nhạc</div>
+                </div>
+                <div class="card-content">
+                    <h3>Nhạc Cụ Cổ Truyền</h3>
+                    <p class="card-period">Âm Nhạc Việt • Truyền Thống</p>
+                    <p class="card-desc">Bộ sưu tập nhạc cụ cổ xưa</p>
+                    <div class="card-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Chi Tiết -->
+    <div id="artifactModal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeArtifactModal()"></div>
+        <div class="modal-content-hoian">
+            <button class="modal-close" onclick="closeArtifactModal()">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="modal-body-hoian">
+                <!-- Left: Images & Video -->
+                <div class="modal-left-hoian">
+                    <!-- Main Image -->
+                    <div class="artifact-main">
+                        <img id="modalImage" src="" alt="Hiện vật" class="modal-main-image">
+                    </div>
+
+                    <!-- Gallery -->
+                    <div class="artifact-gallery" id="artifactGallery"></div>
+
+                    <!-- Video -->
+                    <div class="artifact-video-section">
+                        <div class="video-wrapper">
+                            <video id="modalVideo" controls class="modal-video">
+                                <source id="videoSource" src="" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="video-desc" id="videoDesc"></p>
+                    </div>
+                </div>
+
+                <!-- Right: Info -->
+                <div class="modal-right-hoian">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-period" id="modalPeriod"></p>
+
+                    <div class="modal-info-grid">
+                        <div class="info-box">
+                            <label>Chất Liệu</label>
+                            <span id="modalMaterial"></span>
+                        </div>
+                        <div class="info-box">
+                            <label>Kích Thước</label>
+                            <span id="modalSize"></span>
+                        </div>
+                        <div class="info-box">
+                            <label>Thời Kỳ</label>
+                            <span id="modalTime"></span>
+                        </div>
+                        <div class="info-box">
+                            <label>Niên Đại</label>
+                            <span id="modalYear"></span>
+                        </div>
+                    </div>
+
+                    <div class="modal-description">
+                        <h3>Mô Tả Chi Tiết</h3>
+                        <p id="modalDescription"></p>
+                    </div>
+
+                    <div class="modal-history">
+                        <h3>Lịch Sử</h3>
+                        <p id="modalHistory"></p>
+                    </div>
+
+                    <div class="modal-significance">
+                        <h3>Ý Nghĩa Lịch Sử</h3>
+                        <p id="modalSignificance"></p>
+                    </div>
+
+                    <button class="btn-close-modal" onclick="closeArtifactModal()">
+                        Đóng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về Chúng Tôi</h3>
+                <p>Bảo Tàng Hội An - bảo tồn và truyền dạy di sản văn hóa Hội An cổ xưa.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Kết</h3>
+                <ul>
+                    <li><a href="../timeline.html">Dòng Lịch Sử</a></li>
+                    <li><a href="../map.html">Bản Đồ Bảo Tàng</a></li>
+                    <li><a href="../quiz.html">Kiểm Tra</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bảo Tàng Lịch Sử Văn Hóa Hội An. Bảo Tồn Di Sản.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/map/hoian.js"></script>
+    <script>
+        function toggleSound() {
+            const video = document.getElementById('heroVideo');
+            video.muted = false;
+            video.volume = 1;
+        }
+        </script>
+
+</body>
+</html>

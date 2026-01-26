@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiến Trình - Bảo Tàng Lịch Sử Việt Nam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/progress.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+           <div class="nav-logo" onclick="location.href='../index.html'"> 
+                <span class="logo-circle">
+                    <div class="logo-image">
+                        <img src="../assets/images/z7466353692132_c4290ee6f126bd5eeb17054044c74d9d.jpg" alt="Logo VN">
+                    </div>
+                </span>
+                 <div class="logo-text">
+                 <h1>Bảo Tàng Lịch Sử Việt Nam</h1> 
+                 <p>Vietnamese History Museum</p> 
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="timeline.html">Dòng Lịch Sử</a></li>
+                <li><a href="map.html">Bản Đồ Bảo Tàng</a></li>
+                <li><a href="quiz.html">Kiểm Tra</a></li>
+                <li><a href="progress.html" class="active">Tiến Trình</a></li>
+                <li><a href="login.html">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 style="text-align: center; margin: 2rem 0; color: var(--primary);">📊 Tiến Trình Học Tập</h1>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 2rem;">Theo dõi tiến độ học tập và thành tích của bạn</p>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon blue">
+                    <i class="fas fa-book"></i>
+                </div>
+                <h4>Bài Học Hoàn Thành</h4>
+                <div class="stat-value">23 <span class="stat-total">/ 50</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon yellow">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>Điểm Trung Bình</h4>
+                <div class="stat-value">85 <span class="stat-total">/ 100</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon green">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h4>Mục Tiêu Tuần</h4>
+                <div class="stat-value">18 <span class="stat-total">/ 20</span></div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon red">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <h4>Ngày Học Liên Tiếp</h4>
+                <div class="stat-value">12 <span class="stat-total">/ ngày</span></div>
+            </div>
+        </div>
+
+        <div class="progress-main">
+            <!-- Left Column -->
+            <div class="progress-left">
+                <!-- Learning Progress by Period -->
+                <div class="progress-section">
+                    <h2>📈 Tiến Độ Theo Giai Đoạn</h2>
+                    
+                    <div class="progress-items">
+                        <div class="progress-item">
+                            <div class="progress-label">
+                                <span>Hùng Vương</span>
+                                <span class="progress-percent">100%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%; background: linear-gradient(90deg, #8B4513 0%, #A0522D 100%);">
+                                    <span class="check-icon">✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-label">
+                                <span>Bắc Thuộc</span>
+                                <span class="progress-percent">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%; background: linear-gradient(90deg, #2C3E50 0%, #34495E 100%);"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-label">
+                                <span>Phong Kiến</span>
+                                <span class="progress-percent">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%; background: linear-gradient(90deg, #E74C3C 0%, #C0392B 100%);"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-label">
+                                <span>Thuộc Pháp</span>
+                                <span class="progress-percent">60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%; background: linear-gradient(90deg, #2C3E50 0%, #34495E 100%);"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-label">
+                                <span>Hiện Đại</span>
+                                <span class="progress-percent">45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%; background: linear-gradient(90deg, #F39C12 0%, #E67E22 100%);"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Topics Breakdown Chart -->
+                <div class="progress-section chart-section">
+                    <h2>📊 Phân Bổ Chủ Đề Học</h2>
+                    <div class="chart-container">
+                        <canvas id="topicChart"></canvas>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <div class="legend-dot" style="background: #8B4513;"></div>
+                            <span>Thời Hùng Vương: 25%</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-dot" style="background: #E74C3C;"></div>
+                            <span>Phong Kiến: 30%</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-dot" style="background: #2C3E50;"></div>
+                            <span>Thời Bắc Thuộc: 20%</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-dot" style="background: #F39C12;"></div>
+                            <span>Hiện Đại: 10%</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-dot" style="background: #34495E;"></div>
+                            <span>Thuộc Pháp: 15%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="progress-right">
+                <!-- Achievements -->
+                <div class="achievements-section">
+                    <h2>🏆 Thành Tích</h2>
+
+                    <div class="achievement-card completed">
+                        <div class="achievement-header">
+                            <div class="achievement-icon">👨‍🎓</div>
+                            <div class="achievement-content">
+                                <h4>Người Khởi Đầu</h4>
+                                <p>Hoàn thành bài học đầu tiên</p>
+                                <div class="achievement-status completed">
+                                    <span>✓</span> Đã đạt được
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card completed">
+                        <div class="achievement-header">
+                            <div class="achievement-icon">👑</div>
+                            <div class="achievement-content">
+                                <h4>Chuyên Gia Hùng Vương</h4>
+                                <p>Hoàn thành tất cả bài học về thời Hùng Vương</p>
+                                <div class="achievement-status completed">
+                                    <span>✓</span> Đã đạt được
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card completed">
+                        <div class="achievement-header">
+                            <div class="achievement-icon">⭐</div>
+                            <div class="achievement-content">
+                                <h4>Điểm Cao</h4>
+                                <p>Đạt 90+ điểm trong bài kiểm tra</p>
+                                <div class="achievement-status completed">
+                                    <span>✓</span> Đã đạt được
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card locked">
+                        <div class="achievement-header">
+                            <div class="achievement-icon">🔥</div>
+                            <div class="achievement-content">
+                                <h4>Siêu Học Sinh</h4>
+                                <p>Học 7 ngày liên tiếp</p>
+                                <div class="achievement-status locked">
+                                    <span>⏳</span> Sắp đạt được
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekly Goal -->
+                <div class="weekly-goal">
+                    <h4>🎯 Mục Tiêu Tuần Này</h4>
+                    <p class="goal-subtitle">Hoàn thành 20 giờ học</p>
+                    <div class="goal-progress">
+                        <div class="goal-bar">
+                            <div class="goal-fill" style="width: 70%;"></div>
+                        </div>
+                        <div class="goal-text">18/20 giờ - Còn 2 giờ nữa!</div>
+                    </div>
+                    <button class="goal-action" onclick="location.href='timeline.html'">
+                        <span>🚀</span>
+                        Tiếp Tục Học Ngay
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Activity Chart -->
+        <div class="charts-row">
+            <div class="chart-card">
+                <h3>📊 Hoạt Động Trong Tuần</h3>
+                <div class="chart-container large">
+                    <canvas id="weeklyChart"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h3>📈 Xu Hướng Điểm Số</h3>
+                <div class="chart-container large">
+                    <canvas id="trendChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="timeline.html" class="btn btn-primary">← Quay Lại Học</a>
+            <a href="quiz.html" class="btn btn-outline" style="margin-left: 1rem;">Làm Bài Kiểm Tra →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bảo Tàng Lịch Sử Việt Nam. Bảo Tồn Di Sản - Nơi Lịch Sử Sống.</p>
+    </footer>
+
+    <script src="../js/navigation.js"></script>
+    <script src="../js/charts.js"></script>
+</body>
+</html>

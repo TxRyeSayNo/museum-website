@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dòng Lịch Sử - Bảo Tàng Lịch Sử Việt Nam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/timeline.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+           <div class="nav-logo" onclick="location.href='../index.html'"> 
+                <span class="logo-circle">
+                    <div class="logo-image">
+                        <img src="../assets/images/z7466353692132_c4290ee6f126bd5eeb17054044c74d9d.jpg" alt="Logo VN">
+                    </div>
+                </span>
+                 <div class="logo-text">
+                 <h1>Bảo Tàng Lịch Sử Việt Nam</h1> 
+                 <p>Vietnamese History Museum</p> 
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="timeline.html">Dòng Lịch Sử</a></li>
+                <li><a href="map.html">Bản Đồ Bảo Tàng</a></li>
+                <li><a href="quiz.html">Kiểm Tra</a></li>
+                <li><a href="progress.html" class="active">Tiến Trình</a></li>
+                <li><a href="login.html">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 style="text-align: center; margin: 2rem 0; color: var(--primary);">📅 Dòng Lịch Sử Việt Nam</h1>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Khám phá hành trình 4000 năm lịch sử văn hóa dân tộc Việt Nam</p>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-badge">2879 - 258 TCN</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>🏯 Thời Hùng Vương</h3>
+                    <p>Giai đoạn hình thành quốc gia Văn Lang, nền tảng của nền văn minh Việt Nam. Các vua Hùng đã xây dựng những quy tắc xã hội đầu tiên.</p>
+                    <a href="../pages/periods/hung-kings.html" class="timeline-link">Xem Chi Tiết →</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-badge">111 TCN - 938</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>⛓️ Thời Bắc Thuộc</h3>
+                    <p>Thời kỳ Âu Lạc và sau đó bị Tần, Hán, Tấn chiếm đóng trong 1000 năm. Nhân dân Việt vẫn giữ gìn bản sắc dân tộc.</p>
+                    <a href="../pages/periods/bac-thuoc.html" class="timeline-link">Xem Chi Tiết →</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-badge">939 - 1858</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>🗡️ Thời Độc Lập Phong Kiến</h3>
+                    <p>Thời kỳ phát triển mạnh mẽ của Đại Việt. Trần Hưng Đạo vĩ đại đánh bại quân Nguyên, các vương triều khác nhau góp phần mở rộng đất nước.</p>
+                    <a href="../pages/periods/ly-tran.html" class="timeline-link">Xem Chi Tiết →</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-badge">1858 - 1945</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>🇫🇷 Thời Thuộc Pháp</h3>
+                    <p>Thời kỳ đó hộ của thực dân Pháp và phong trào giải phóng. Từ Nghĩa vụ quân Cần Vương đến Cách mạng tháng Tám 1945.</p>
+                    <a href="../pages/periods/le-nguyen.html" class="timeline-link">Xem Chi Tiết →</a>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-badge">1945 - Nay</div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>🌟 Thời Đại Hiện Đại</h3>
+                    <p>Xây dựng nước Việt Nam đổi mới, hội nhập quốc tế, phát triển kinh tế - xã hội và bảo vệ di sản văn hóa.</p>
+                    <a href="../pages/periods/hien-dai.html" class="timeline-link">Xem Chi Tiết →</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="map.html" class="btn btn-primary">Xem Bản Đồ →</a>
+            <a href="quiz.html" class="btn btn-outline" style="margin-left: 1rem;">Làm Bài Kiểm Tra →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bảo Tàng Lịch Sử Việt Nam. Bảo Tồn Di Sản - Nơi Lịch Sử Sống.</p>
+    </footer>
+
+    <script src="../js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảo Tàng Lịch Sử Quân Sự Việt Nam - Hà Nội</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/map/hanoi.css">
+</head>
+<body class="location-page">
+    <!-- Background Image -->
+    <div class="page-background" style="background-image: url('../../assets/images/z7466379837990_b430d7c74f8a8ae658b0fc4657cff2a6.jpg'); background-attachment: fixed; background-size: cover; background-position: center;"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="location.href='../../index.html'" style="cursor: pointer;">
+                <div class="logo-image">
+                    <img src="../../assets/images/z7466353692132_c4290ee6f126bd5eeb17054044c74d9d.jpg" alt="Logo VN">
+                </div>
+                <div class="logo-text">
+                    <h1>Bảo Tàng Lịch Sử Việt Nam</h1>
+                    <p>Vietnamese History Museum</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../../index.html">Trang Chủ</a></li>
+                <li><a href="../timeline.html">Dòng Lịch Sử</a></li>
+                <li><a href="../map.html" class="active">Bản Đồ Bảo Tàng</a></li>
+                <li><a href="../quiz.html">Kiểm Tra</a></li>
+                <li><a href="../progress.html">Tiến Trình</a></li>
+                <li><a href="../login.html">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container-location">
+        <!-- Header -->
+        <section class="location-header">
+            <button class="btn-back" onclick="goBack()">
+                <i class="fas fa-arrow-left"></i> Quay Lại
+            </button>
+            <div class="header-content">
+                <h1>Bảo Tàng Lịch Sử Quân Sự Việt Nam</h1>
+                <p class="header-location"><i class="fas fa-map-marker-alt"></i> Hà Nội</p>
+            </div>
+        </section>
+
+        <!-- Section Title -->
+        <h2 class="section-title">TRUNG BÀY ONLINE</h2>
+
+        <!-- Artifacts Grid -->
+        <div class="artifacts-grid">
+            <!-- Artifact 1 -->
+            <div class="artifact-card" onclick="openArtifactModal(0)">
+                <div class="artifact-image" style="background: linear-gradient(135deg, rgba(196,30,58,0.7) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hanoi/Picture2.png'); background-size: cover; background-position: center;">
+                    <div class="artifact-label">
+                        <h3>Bức Tượng Đồng Chủ Tịch Hồ Chí Minh</h3>
+                        <p>Với Chiến Sĩ Tình Báo</p>
+                    </div>
+                </div>
+                <div class="artifact-overlay">
+                    <div class="artifact-text">
+                        <p>Bức tượng đồng Chủ tịch Hồ Chí Minh với chiến sĩ tình báo được trưng bày ở vị trí trang trọng giữa bảo tàng. Với lực lượng tình báo quốc phòng, Bác Hồ dành sự quan tâm đặc biệt...</p>
+                    </div>
+                    <button class="btn-view">Xem Chi Tiết →</button>
+                </div>
+            </div>
+
+            <!-- Artifact 2 -->
+            <div class="artifact-card" onclick="openArtifactModal(1)">
+                <div class="artifact-image" style="background: linear-gradient(135deg, rgba(139,69,19,0.7) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hanoi/Picture9.png'); background-size: cover; background-position: center;">
+                    <div class="artifact-label">
+                        <h3>Guốc Chèn Pháo</h3>
+                        <p>Trung Đoàn 45 - Điện Biên Phủ</p>
+                    </div>
+                </div>
+                <div class="artifact-overlay">
+                    <div class="artifact-text">
+                        <p>Guốc chèn pháo của pháo thủ Trung đoàn 45, Đại đoàn 351 sử dụng khi kéo pháo vào mặt trận Điện Biên Phủ năm 1954...</p>
+                    </div>
+                    <button class="btn-view">Xem Chi Tiết →</button>
+                </div>
+            </div>
+
+            <!-- Artifact 3 -->
+            <div class="artifact-card" onclick="openArtifactModal(2)">
+                <div class="artifact-image" style="background: linear-gradient(135deg, rgba(25,25,112,0.7) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hanoi/Picture1.png'); background-size: cover; background-position: center;">
+                    <div class="artifact-label">
+                        <h3>Bom MK-81 & MK-82</h3>
+                        <p>Không Quân Mỹ 1965-1973</p>
+                    </div>
+                </div>
+                <div class="artifact-overlay">
+                    <div class="artifact-text">
+                        <p>Bom MK-81 chứa 44kg thuốc nổ với sức công phá mạnh, có 4 cánh. MK-82 có trọng lượng 227kg, mang theo 87kg thuốc nổ Tritonal...</p>
+                    </div>
+                    <button class="btn-view">Xem Chi Tiết →</button>
+                </div>
+            </div>
+
+            <!-- Artifact 4 -->
+            <div class="artifact-card" onclick="openArtifactModal(3)">
+                <div class="artifact-image" style="background: linear-gradient(135deg, rgba(184,134,11,0.7) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hanoi/Picture10.png'); background-size: cover; background-position: center;">
+                    <div class="artifact-label">
+                        <h3>Xe Đạp Thồ Đoàn 559</h3>
+                        <p>Đường Trường Sơn Huyền Thoại</p>
+                    </div>
+                </div>
+                <div class="artifact-overlay">
+                    <div class="artifact-text">
+                        <p>Xe đạp thồ của các chiến sĩ Đoàn 559 sử dụng vận chuyển hàng trên đường Trường Sơn. Phương tiện vận tải chính trong những năm khó khăn...</p>
+                    </div>
+                    <button class="btn-view">Xem Chi Tiết →</button>
+                </div>
+            </div>
+
+            <!-- Artifact 5 -->
+            <div class="artifact-card" onclick="openArtifactModal(4)">
+                <div class="artifact-image" style="background: linear-gradient(135deg, rgba(220,20,60,0.7) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hanoi/Picture3.png'); background-size: cover; background-position: center;">
+                    <div class="artifact-label">
+                        <h3>Cờ Đội Biệt Động Z32</h3>
+                        <p>Giải Phóng Sài Gòn 30/4/1975</p>
+                    </div>
+                </div>
+                <div class="artifact-overlay">
+                    <div class="artifact-text">
+                        <p>Cờ của Đội biệt động Z32 may, phát cho nhân dân đón bộ đội vào Sài Gòn ngày 30/4/1975. Biểu tượng thiêng liêng của ngày thống nhất...</p>
+                    </div>
+                    <button class="btn-view">Xem Chi Tiết →</button>
+                </div>
+            </div>
+
+            <!-- Artifact 6 -->
+            <div class="artifact-card" onclick="openArtifactModal(5)">
+                <div class="artifact-image" style="background: linear-gradient(135deg, rgba(47,79,79,0.7) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hanoi/Picture11.png'); background-size: cover; background-position: center;">
+                    <div class="artifact-label">
+                        <h3>Súng 12,7mm Khẩu Đội 6</h3>
+                        <p>Chiến Dịch Đường 9 - Nam Lào</p>
+                    </div>
+                </div>
+                <div class="artifact-overlay">
+                    <div class="artifact-text">
+                        <p>Súng 12,7mm của Khẩu đội 6 sử dụng trong Chiến dịch Đường 9 - Nam Lào, 1971. Một trong những chiến dịch quân sự quan trọng nhất...</p>
+                    </div>
+                    <button class="btn-view">Xem Chi Tiết →</button>
+                </div>
+            </div>
+
+            <!-- Artifact 7 -->
+            <div class="artifact-card" onclick="openArtifactModal(6)">
+                <div class="artifact-image" style="background: linear-gradient(135deg, rgba(85,85,85,0.7) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hanoi/Picture4.png'); background-size: cover; background-position: center;">
+                    <div class="artifact-label">
+                        <h3>Dao Găm Phi Công Mỹ</h3>
+                        <p>Chiến Dịch 12 Ngày Đêm 1972</p>
+                    </div>
+                </div>
+                <div class="artifact-overlay">
+                    <div class="artifact-text">
+                        <p>Dao găm của phi công Mỹ bị bắn rơi tại Hà Nội trong chiến dịch 12 ngày đêm, tháng 12/1972. Vũ khí tự vệ cá nhân của phi công...</p>
+                    </div>
+                    <button class="btn-view">Xem Chi Tiết →</button>
+                </div>
+            </div>
+
+            <!-- Artifact 8 -->
+            <div class="artifact-card" onclick="openArtifactModal(7)">
+                <div class="artifact-image" style="background: linear-gradient(135deg, rgba(0,100,100,0.7) 0%, rgba(0,0,0,0.8) 100%), url('../../assets/images/hanoi/Picture5.png'); background-size: cover; background-position: center;">
+                    <div class="artifact-label">
+                        <h3>Bộ Quần Áo Bay Phi Công</h3>
+                        <p>Không Quân Việt Nam</p>
+                    </div>
+                </div>
+                <div class="artifact-overlay">
+                    <div class="artifact-text">
+                        <p>Bộ quần áo bay của các phi công Việt Nam từ 1997-2007. Tượng trưng cho sự hi sinh, dũng cảm của phi công trong bảo vệ bầu trời Tổ quốc...</p>
+                    </div>
+                    <button class="btn-view">Xem Chi Tiết →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Artifact Detail Modal -->
+        <div id="artifactModal" class="modal hidden">
+            <div class="modal-overlay" onclick="closeArtifactModal()"></div>
+            <div class="modal-content-location">
+                <button class="modal-close" onclick="closeArtifactModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <div class="modal-body-location">
+                    <!-- Left Side: Image & Video -->
+                    <div class="modal-left">
+                        <div class="artifact-main">
+                            <img id="modalImage" src="" alt="Hiện vật" class="modal-main-image">
+                        </div>
+
+                        <!-- Gallery -->
+                        <div class="artifact-gallery" id="artifactGallery"></div>
+
+                        <!-- Video -->
+                        <div class="artifact-video-section">
+                            <div class="video-wrapper">
+                                <video id="modalVideo" controls class="modal-video">
+                                    <source id="videoSource" src="" type="video/mp4">
+                                </video>
+                            </div>
+                            <p class="video-desc" id="videoDesc"></p>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Info -->
+                    <div class="modal-right">
+                        <h2 id="modalTitle"></h2>
+                        <p class="modal-period" id="modalPeriod"></p>
+
+                        <div class="modal-info-grid">
+                            <div class="info-box">
+                                <label>Chất Liệu</label>
+                                <span id="modalMaterial"></span>
+                            </div>
+                            <div class="info-box">
+                                <label>Kích Thước</label>
+                                <span id="modalSize"></span>
+                            </div>
+                            <div class="info-box">
+                                <label>Thời Kỳ</label>
+                                <span id="modalTime"></span>
+                            </div>
+                            <div class="info-box">
+                                <label>Năm</label>
+                                <span id="modalYear"></span>
+                            </div>
+                        </div>
+
+                        <div class="modal-description">
+                            <h3>Mô Tả Chi Tiết</h3>
+                            <p id="modalDescription"></p>
+                        </div>
+
+                        <div class="modal-history">
+                            <h3>Lịch Sử</h3>
+                            <p id="modalHistory"></p>
+                        </div>
+
+                        <div class="modal-significance">
+                            <h3>Ý Nghĩa Lịch Sử</h3>
+                            <p id="modalSignificance"></p>
+                        </div>
+
+                        <button class="btn-close-modal" onclick="closeArtifactModal()">
+                            Đóng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Về Chúng Tôi</h3>
+                <p>Bảo Tàng Lịch Sử Việt Nam là nơi bảo tồn và truyền dạy di sản lịch sử của dân tộc Việt.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liên Kết</h3>
+                <ul>
+                    <li><a href="../timeline.html">Dòng Lịch Sử</a></li>
+                    <li><a href="../map.html">Bản Đồ Bảo Tàng</a></li>
+                    <li><a href="../quiz.html">Kiểm Tra</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Theo Dõi</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bảo Tàng Lịch Sử Việt Nam. Bảo Tồn Di Sản - Nơi Lịch Sử Sống.</p>
+        </div>
+    </footer>
+
+    <script src="../../js/map/hanoi.js"></script>
+</body>
+</html>

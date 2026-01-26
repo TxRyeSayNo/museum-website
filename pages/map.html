@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bản Đồ Bảo Tàng - Vietnamese History Museum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body class="map-page">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+           <div class="nav-logo" onclick="location.href='../index.html'"> 
+                <span class="logo-circle">
+                    <div class="logo-image">
+                        <img src="../assets/images/z7466353692132_c4290ee6f126bd5eeb17054044c74d9d.jpg" alt="Logo VN">
+                    </div>
+                </span>
+                 <div class="logo-text">
+                 <h1>Bảo Tàng Lịch Sử Việt Nam</h1> 
+                 <p>Vietnamese History Museum</p> 
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Trang Chủ</a></li>
+                <li><a href="timeline.html">Dòng Lịch Sử</a></li>
+                <li><a href="map.html" class="active">Bản Đồ Bảo Tàng</a></li>
+                <li><a href="quiz.html">Kiểm Tra</a></li>
+                <li><a href="progress.html">Tiến Trình</a></li>
+                <li><a href="login.html">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Map Container -->
+    <div class="map-wrapper">
+        <!-- Search Bar -->
+        <div class="map-search-container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Tìm kiếm bảo tàng khắp Việt Nam" onkeyup="searchMuseums()" >
+                <i class="fas fa-times" id="clearSearch" onclick="clearSearch()" style="display:none; cursor:pointer;"></i>
+            </div>
+        </div>
+
+        <!-- Main Map Area -->
+        <div class="map-container">
+            <!-- Map -->
+            <div id="map" class="map"></div>
+
+            <!-- Side Panel - Museum Details -->
+            <div class="museum-panel">
+                <div class="panel-header">
+                    <h2>Chọn Bảo Tàng</h2>
+                    <i class="fas fa-times" onclick="closePanel()"></i>
+                </div>
+                <div id="museumContent" class="museum-content">
+                    <p style="text-align: center; color: #999; padding: 2rem;">
+                        Ấn vào các biểu tượng trên bản đồ để xem chi tiết bảo tàng
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Toggle Panel Button -->
+       <!-- ...existing... -->
+            <button class="toggle-panel-btn" onclick="togglePanel()">
+                <i class="fas fa-bars"></i>
+            </button>
+
+    </div>
+
+    <!-- Modal for Artifacts -->
+    <div id="artifactModal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeArtifactModal()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="artifactContent" class="artifact-content">
+                <!-- Content sẽ được load từ JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="../js/map.js"></script>
+</body>
+</html>
