@@ -27,11 +27,11 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
 
-    background-image: url('../assets/images/b88f0186-3e12-4369-a64b-a1a072c19532.png');
+    background-image: url('../assets/images/0ab35df5-901a-495e-ba71-c9bcc74c949c.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed;   
 }
 /* Quiz Selection */
 #quizSelection {
@@ -212,7 +212,7 @@ html, body {
 #quizSelection .quiz-card:nth-child(3) {
     background-image: 
         linear-gradient(135deg, rgba(220, 20, 60, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%),
-        url('../assets/images/phong-kien2.png');
+        url('../assets/images/tải xuống.jpeg');
 }
 
 #quizSelection .quiz-card:nth-child(4) {
