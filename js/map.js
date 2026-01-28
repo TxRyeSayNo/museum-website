@@ -229,3 +229,10 @@ window.addEventListener('resize', () => {
         document.querySelector('.museum-panel').classList.remove('open');
     }
 });
+window.addEventListener("scroll", () => {
+    const scrolled = window.scrollY * 0.3;
+    document.documentElement.style.setProperty(
+        "--scroll",
+        `${scrolled}px`
+    );
+});
