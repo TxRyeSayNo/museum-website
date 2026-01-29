@@ -44,7 +44,7 @@
             <div class="hero-content-wrapper">
                 <!-- Left -->
                 <div class="hero-left">
-                    <p class="hero-label">Bồn nghìn năm lịch sử từ Vua Hùng Đến Bác</p>
+                    <p class="hero-label">Chơi một loạt dân tộc</p>
                     <h1 class="hero-title">Hào Khí<br><span class="highlight">Ngàn Năm</span></h1>
                     <p class="hero-description">
                         Hành trình xuyên không gian và thời gian, khám phá những trang sử hào hùng của dân tộc Việt qua lăng kính nghệ thuật đương đại.
@@ -81,7 +81,9 @@
             <div class="experience-grid">
                 <div class="experience-card">
                     <div class="card-image">
-                        <img src="assets/images/9babd85b-75d8-4892-8414-e2ec5d3dca4a (1).png" alt="Khám phá">
+                        <img src="assets/images/9babd85b-75d8-4892-8414-e2ec5d3dca4a (1).png" alt="Khám phá">git checkout main
+git pull
+
                     </div>
                     <div class="card-body">
                         <h3>Khám Phá Lịch Sử Theo Dòng Thời Gian</h3>
@@ -342,25 +344,23 @@
         
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <!-- ...existing footer code... -->
-    </footer>
-
     <!-- ===== SECTION 4 - Xem Thử 60 Giây ===== -->
     <section class="preview-section">
         <div class="section-bg" style="background-image: url('assets/images/nen/nen4.png');"></div>
-        
+
         <div class="section-container">
-            <h2 class="section-title">Xem Thử 60 Giây</h2>
-            
-            <div class="preview-content">
-                <div class="preview-image">
-                    <img src="assets/images/home/preview.jpg" alt="Preview">
-                </div>
+            <h2 class="section-title">Những video lịch sử đặc biệt Việt Nam</h2>
+
+            <div class="preview-content large-video">
+                <video autoplay muted loop playsinline preload="metadata">
+                    <source src="assets/images/videoplayback.mp4" type="video/mp4">
+                </video>
+                <button class="sound-toggle" onclick="toggleSound()">🔊</button>
             </div>
         </div>
     </section>
+
+
 
     <!-- AI Chat Button -->
     <button class="ai-chat-btn" onclick="openAIChat()" title="AI Trợ Lý Lịch Sử">
@@ -493,7 +493,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Bảo Tàng Lịch Sử Việt Nam. Bảo Tồn Di Sản - Nơi Lịch Sử Sống.</p>
+            <p>&copy; 2024 Bảo Tàng Lịch Sử Việt Nam. Bảo Tồn Di Sản - Nơi Lịch Sử Sống.</p>
         </div>
     </footer>
 
