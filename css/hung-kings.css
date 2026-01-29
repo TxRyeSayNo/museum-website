@@ -1,0 +1,290 @@
+/* Hung Kings page (Thời Hùng Vương) */
+
+:root {
+  --hk-ink: #2c1810;
+  --hk-muted: rgba(44, 24, 16, 0.72);
+  --hk-paper: rgba(255, 255, 255, 0.92);
+  --hk-line: rgba(44, 24, 16, 0.14);
+  --hk-gold: #ffd54f;
+}
+
+.hk-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0 48px;
+}
+
+.hk-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(60, 40, 25, 0.72) 0%, rgba(139, 0, 0, 0.55) 45%, rgba(44, 24, 16, 0.72) 100%),
+    url("../assets/images/vua-hung-vuong-1536x922.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  z-index: 0;
+}
+
+.hk-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hk-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.hk-breadcrumb a {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+}
+
+.hk-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.hk-title {
+  color: #fff;
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 1.12;
+  margin-bottom: 14px;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+}
+
+.hk-subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 860px;
+  margin-bottom: 18px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.hk-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.hk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.hk-chip:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hk-section {
+  position: relative;
+  padding: 42px 0;
+}
+
+.hk-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hk-panel {
+  background: var(--hk-paper);
+  border: 1px solid var(--hk-line);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+}
+
+.hk-section-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--hk-ink);
+  margin-bottom: 14px;
+  font-family: "Times New Roman", serif;
+}
+
+.hk-lead {
+  color: var(--hk-muted);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.hk-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+.hk-col-7 { grid-column: span 7; }
+.hk-col-5 { grid-column: span 5; }
+.hk-col-6 { grid-column: span 6; }
+.hk-col-4 { grid-column: span 4; }
+.hk-col-12 { grid-column: span 12; }
+
+.hk-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.hk-fact {
+  border: 1px solid var(--hk-line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 12px 14px;
+}
+
+.hk-fact .k {
+  display: block;
+  font-weight: 800;
+  color: var(--hk-ink);
+  margin-bottom: 4px;
+}
+
+.hk-fact .v {
+  color: var(--hk-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.hk-image-card {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--hk-line);
+  box-shadow: 0 16px 55px rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+.hk-image-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.hk-image-caption {
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: var(--hk-muted);
+  border-top: 1px solid var(--hk-line);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.hk-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.hk-card {
+  border: 1px solid var(--hk-line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 16px 16px 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hk-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14);
+}
+
+.hk-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  color: var(--hk-ink);
+  font-weight: 800;
+}
+
+.hk-card p {
+  margin: 0;
+  color: var(--hk-muted);
+  line-height: 1.7;
+  font-size: 0.96rem;
+}
+
+.hk-sources {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.hk-sources li {
+  border: 1px solid var(--hk-line);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.hk-sources a {
+  color: var(--primary, #d32f2f);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.hk-sources a:hover {
+  text-decoration: underline;
+}
+
+.hk-sources .meta {
+  display: block;
+  color: var(--hk-muted);
+  margin-top: 4px;
+  line-height: 1.55;
+}
+
+.hk-inline-note {
+  font-size: 0.92rem;
+  color: var(--hk-muted);
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .hk-col-7,
+  .hk-col-5,
+  .hk-col-6,
+  .hk-col-4 {
+    grid-column: span 12;
+  }
+
+  .hk-image-card img {
+    height: 280px;
+  }
+
+  .hk-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hk-facts {
+    grid-template-columns: 1fr;
+  }
+}
