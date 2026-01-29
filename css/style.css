@@ -339,6 +339,10 @@ footer {
     justify-content: flex-end; /* đẩy video sát phải */
     align-items: center;
 }
+.hero-right-context{
+    text-align: center;
+    padding-bottom: 50px;
+}
 
 /* Cho video to hẳn ra */
 .video-container {
