@@ -647,7 +647,7 @@ footer {
 
 .btn-card {
     background: linear-gradient(135deg, #c9915a, #b8860b);
-    color: white;
+    color: rgb(253, 246, 246);
     border: none;
     padding: 0.6rem 1.3rem;
     border-radius: 5px;
@@ -751,7 +751,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: #2c1810;
     font-size: 1.5rem;
     flex-shrink: 0;
     box-shadow: 0 4px 15px rgba(139,69,19,0.25);
@@ -780,7 +780,7 @@ footer {
 
 .btn-period {
     background: #8b4513;
-    color: white;
+    color: rgb(255, 255, 255);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -842,7 +842,7 @@ footer {
 
 .btn-explore {
     background: linear-gradient(135deg, #f5f4f3, #b8860b);
-    color: white;
+    color: rgb(183, 84, 84);
     border: none;
     padding: 0.9rem 2rem;
     border-radius: 6px;
@@ -859,6 +859,53 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 12px 35px rgba(139,69,19,0.35);
 }
+.timeline-period {
+    position: relative;
+    min-height: 260px;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 24px;
+}
+
+/* Ảnh nền */
+.timeline-period .timeline-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Lớp phủ để chữ không bị chìm */
+.timeline-period::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+    );
+    z-index: 2;
+}
+
+/* Icon */
+.timeline-period .period-icon {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 10px;
+    color: #ffd27d;
+}
+
+/* Nội dung */
+.timeline-period .period-content {
+    position: relative;
+    z-index: 3;
+    max-width: 420px;
+    color: #591313;
+}
+
+
+
 
 /* ===== SECTION 3: JOURNEY ===== */
 .journey-section {
@@ -897,7 +944,7 @@ footer {
     top: 12px;
     left: 12px;
     background: linear-gradient(135deg, #c9915a, #b8860b);
-    color: white;
+    color: rgb(165, 46, 46);
     padding: 0.4rem 0.9rem;
     border-radius: 20px;
     font-size: 0.7rem;
@@ -1061,7 +1108,331 @@ footer {
 .card-image img {
     position: static; /* hoặc bỏ hẳn */
 }
+    .timeline-period .timeline-content {
+    color: #2c1810; /* màu chữ giống các block khác */
+}
 
+.timeline-period .timeline-content h3 {
+    color: #2c1810;
+}
+
+.timeline-period .timeline-content p {
+    color: #6b5344;
+}
+
+.timeline-period .timeline-content .period-date {
+    color: #c9915a;
+}
+/* ===== SECTION 5: TESTIMONIALS ===== */
+.testimonials-section {
+    position: relative;
+    margin: 2rem 0;
+    padding: 4rem 2rem;
+}
+
+.section-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    z-index: 0;
+}
+
+.testimonials-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonial-quote {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c1810;
+    font-family: 'Times New Roman', serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+}
+
+.testimonial-stats {
+    display: flex;
+    gap: 1rem;
+}
+
+.testimonial-stats .stat {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-weight: 600;
+    color: #6b5344;
+    font-size: 1rem;
+}
+
+.testimonials-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonial-card {
+
+    border: 3px solid #d4a574;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(139,69,19,0.25);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 75px rgba(139,69,19,0.35);
+    border-color: #c9915a;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #c9915a;
+    box-shadow: 0 6px 16px rgba(139,69,19,0.3);
+    flex-shrink: 0;
+}
+
+.testimonial-info h4 {
+    color: #2c1810;
+    font-weight: 700;
+    margin: 0 0 0.7rem 0;
+    font-size: 1.2rem;
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 0.4rem;
+    font-size: 1rem;
+}
+
+.testimonial-rating i {
+    color: #FFD700;
+}
+
+.testimonial-text {
+    color: #6b5344;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.testimonial-location {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #c9915a;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.testimonial-location i {
+    font-size: 1.1rem;
+}
+
+.btn-testimonial {
+    background: linear-gradient(135deg, #c9915a, #b8860b);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-testimonial:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(139,69,19,0.4);
+}
+.testimonials-right {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 360px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* Ảnh làm background */
+.testimonials-right .card-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.testimonials-right .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay để chữ nổi */
+.testimonials-right::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+/* Card nội dung nằm trên ảnh */
+.testimonial-card {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #fff;
+    background: transparent;
+}
+
+/* Header */
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.testimonial-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+}
+
+.testimonial-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.testimonial-rating i {
+    color: #f5c518;
+    font-size: 0.85rem;
+}
+
+/* Text */
+.testimonial-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    opacity: 0.95;
+}
+
+/* Location */
+.testimonial-location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin-bottom: 16px;
+}
+
+/* Button */
+.btn-testimonial {
+    align-self: flex-start;
+    padding: 10px 22px;
+    border-radius: 999px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-testimonial:hover {
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .testimonials-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .testimonials-right {
+        flex-direction: row;
+    }
+
+    .testimonial-card {
+        flex: 1;
+    }
+
+    .testimonial-quote {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .testimonial-stats {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-wrapper {
+        gap: 1.5rem;
+    }
+
+    .testimonials-right {
+        flex-direction: column;
+    }
+
+    .testimonial-quote {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-card {
+        padding: 2rem;
+    }
+
+    .testimonial-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonial-text {
+        font-size: 0.95rem;
+    }
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
