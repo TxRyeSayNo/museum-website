@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thời Hùng Vương - Bảo Tàng Lịch Sử Việt Nam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/hung-kings.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="location.href='../../index.html'">
+                <span class="logo-circle">
+                    <div class="logo-image">
+                        <img src="../../assets/images/z7466353692132_c4290ee6f126bd5eeb17054044c74d9d.jpg" alt="Logo VN">
+                    </div>
+                </span>
+                <div class="logo-text">
+                    <h1>Bảo Tàng Lịch Sử Việt Nam</h1>
+                    <p>Vietnamese History Museum</p>
+                </div>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Mở menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../index.html">Trang Chủ</a></li>
+                <li><a href="../timeline.html">Dòng Lịch Sử</a></li>
+                <li><a href="../map.html">Bản Đồ Bảo Tàng</a></li>
+                <li><a href="../quiz.html">Kiểm Tra</a></li>
+                <li><a href="../progress.html">Tiến Trình</a></li>
+                <li><a href="../login.html">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hk-hero">
+        <div class="container">
+            <div class="hk-breadcrumb">
+                <a href="../../index.html">Trang chủ</a>
+                <span>›</span>
+                <a href="../timeline.html">Dòng lịch sử</a>
+                <span>›</span>
+                <span>Thời Hùng Vương</span>
+            </div>
+
+            <h1 class="hk-title">🏯 Thời Hùng Vương<br><span style="color: var(--hk-gold)">Cội nguồn Văn Lang</span></h1>
+            <p class="hk-subtitle">
+                Trang này tóm lược giai đoạn khởi đầu dựng nước gắn với nhà nước Văn Lang (và chuyển tiếp Âu Lạc),
+                dựa trên nguồn chính thống từ <strong>Bảo tàng Lịch sử Quốc gia</strong> và <strong>UNESCO</strong>.
+            </p>
+
+            <div class="hk-hero-actions">
+                <a class="hk-chip" href="#tong-quan"><i class="fa-solid fa-compass"></i> Tổng quan</a>
+                <a class="hk-chip" href="#tom-tat"><i class="fa-solid fa-list"></i> Tóm tắt</a>
+                <a class="hk-chip" href="#cac-thoi-ky"><i class="fa-solid fa-clock"></i> Các thời kỳ</a>
+                <a class="hk-chip" href="#thanh-tuu"><i class="fa-solid fa-trophy"></i> Thành tựu</a>
+                <a class="hk-chip" href="#thach-thuc"><i class="fa-solid fa-exclamation-triangle"></i> Thách thức</a>
+                <a class="hk-chip" href="#chuyen-tiep"><i class="fa-solid fa-arrows-rotate"></i> Chuyển tiếp</a>
+                <a class="hk-chip" href="#tin-nguong"><i class="fa-solid fa-seedling"></i> Tín ngưỡng & UNESCO</a>
+                <a class="hk-chip" href="#nguon"><i class="fa-solid fa-link"></i> Nguồn tham khảo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tổng quan -->
+    <section class="hk-section" id="tong-quan">
+        <div class="container">
+            <div class="hk-grid">
+                <div class="hk-col-7">
+                    <div class="hk-panel">
+                        <h2 class="hk-section-title">Tổng quan</h2>
+                        <p class="hk-lead">
+                            Theo trưng bày/giới thiệu của Bảo tàng Lịch sử Quốc gia, vào khoảng <strong>thế kỷ VII TCN</strong>,
+                            trên cơ sở phát triển rực rỡ của <strong>văn hoá Đông Sơn</strong>, nhà nước đầu tiên ra đời: <strong>Văn Lang</strong>,
+                            kinh đô ở <strong>Phong Châu</strong> (khu vực Việt Trì, Phú Thọ ngày nay). Đến khoảng <strong>thế kỷ III TCN</strong>,
+                            Văn Lang suy yếu và <strong>Thục Phán An Dương Vương</strong> thống nhất Âu Việt – Lạc Việt lập nước <strong>Âu Lạc</strong>,
+                            đóng đô ở <strong>Cổ Loa</strong> (Hà Nội ngày nay).
+                        </p>
+
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Mốc hình thành (tham khảo)</span>
+                                <p class="v">Khoảng thế kỷ VII TCN (gắn với giai đoạn Đông Sơn).</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Kinh đô</span>
+                                <p class="v">Phong Châu (Việt Trì, Phú Thọ).</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Chuyển tiếp</span>
+                                <p class="v">Văn Lang → Âu Lạc (Cổ Loa).</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">“18 đời” trong truyền thống</span>
+                                <p class="v">Nguồn Bảo tàng Lịch sử Quốc gia có thảo luận về “18 đời/18 ngành”.</p>
+                            </div>
+                        </div>
+
+                        <p class="hk-inline-note">
+                            Lưu ý: Thời Hùng Vương vừa có lớp <strong>truyền thuyết</strong> (Ngọc phả, thần tích) vừa có lớp <strong>nghiên cứu lịch sử – khảo cổ</strong>.
+                            Vì vậy trong bài có mục “Truyền thống ghi chép” để bạn hiểu cách các con số được lý giải.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hk-col-5">
+                    <div class="hk-image-card">
+                        <img src="../../assets/images/vua-hung-vuong-1536x922.jpg" alt="Hình minh hoạ Thời Hùng Vương">
+                        <div class="hk-image-caption">
+                            Hình minh hoạ: “Vua Hùng” (ảnh trong thư mục dự án). Bạn có thể thay bằng ảnh Đền Hùng/hiện vật nếu muốn.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tóm tắt -->
+    <section class="hk-section" id="tom-tat">
+        <div class="container">
+            <div class="hk-panel">
+                <h2 class="hk-section-title">Tóm tắt: Thời Hùng Vương</h2>
+
+                <!-- I. Khái quát chung -->
+                <div style="margin-bottom: 2.5rem;">
+                    <h3 style="color: var(--hk-ink); font-size: 1.4rem; font-weight: 800; margin-bottom: 1rem; border-bottom: 2px solid var(--hk-line); padding-bottom: 0.5rem;">
+                        I. Khái quát chung thời Vua Hùng
+                    </h3>
+                    <div class="hk-facts">
+                        <div class="hk-fact">
+                            <span class="k">Tên nước</span>
+                            <p class="v"><strong>Văn Lang</strong></p>
+                        </div>
+                        <div class="hk-fact">
+                            <span class="k">Kinh đô</span>
+                            <p class="v"><strong>Phong Châu</strong> (nay thuộc Phú Thọ)</p>
+                        </div>
+                        <div class="hk-fact">
+                            <span class="k">Thời gian tồn tại</span>
+                            <p class="v">~2622 năm (theo truyền thuyết) / 300-400 năm (theo nghiên cứu khảo cổ)</p>
+                        </div>
+                        <div class="hk-fact">
+                            <span class="k">Số đời vua</span>
+                            <p class="v"><strong>18 đời Hùng Vương</strong> (Hùng Vương I → Hùng Vương XVIII)</p>
+                        </div>
+                        <div class="hk-fact" style="grid-column: span 2;">
+                            <span class="k">Tính chất</span>
+                            <p class="v">Thời kỳ dựng nước đầu tiên, mang đậm yếu tố truyền thuyết – lịch sử sơ khai dân tộc Việt Nam thời cổ đại</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- II. Các mốc thời gian & sự kiện quan trọng -->
+                <div>
+                    <h3 style="color: var(--hk-ink); font-size: 1.4rem; font-weight: 800; margin-bottom: 1.5rem; border-bottom: 2px solid var(--hk-line); padding-bottom: 0.5rem;">
+                        II. Các mốc thời gian & sự kiện quan trọng
+                    </h3>
+
+                    <!-- 2879 TCN -->
+                    <div class="hk-card" style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--hk-ink); font-size: 1.2rem; margin-bottom: 0.8rem;">
+                            🔹 2879 TCN – Thành lập nước Văn Lang
+                        </h3>
+                        <ul style="margin: 0.8rem 0; padding-left: 1.5rem; color: var(--hk-muted); line-height: 1.8;">
+                            <li>Hùng Vương thứ nhất lên ngôi</li>
+                            <li>Thành lập nhà nước Văn Lang, nhà nước đầu tiên trong lịch sử Việt Nam</li>
+                            <li>Đánh dấu thời kỳ dựng nước</li>
+                        </ul>
+                        <div style="background: rgba(201, 145, 90, 0.1); padding: 0.8rem; border-left: 3px solid var(--hk-gold); margin-top: 0.8rem; border-radius: 4px;">
+                            <strong style="color: var(--hk-ink);">Ý nghĩa:</strong>
+                            <ul style="margin: 0.5rem 0 0 1.2rem; padding-left: 0.5rem;">
+                                <li>Khẳng định sự hình thành cộng đồng người Việt cổ</li>
+                                <li>Cơ sở cho ý thức quốc gia – dân tộc</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Lạc Long Quân - Âu Cơ -->
+                    <div class="hk-card" style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--hk-ink); font-size: 1.2rem; margin-bottom: 0.8rem;">
+                            🔹 Truyền thuyết Lạc Long Quân – Âu Cơ
+                        </h3>
+                        <ul style="margin: 0.8rem 0; padding-left: 1.5rem; color: var(--hk-muted); line-height: 1.8;">
+                            <li>Sinh ra bọc trăm trứng, nở thành 100 người con</li>
+                            <li>50 con theo cha xuống biển, 50 con theo mẹ lên núi</li>
+                            <li>Người con cả lên làm Hùng Vương</li>
+                        </ul>
+                        <div style="background: rgba(201, 145, 90, 0.1); padding: 0.8rem; border-left: 3px solid var(--hk-gold); margin-top: 0.8rem; border-radius: 4px;">
+                            <strong style="color: var(--hk-ink);">Ý nghĩa:</strong>
+                            <ul style="margin: 0.5rem 0 0 1.2rem; padding-left: 0.5rem;">
+                                <li>Giải thích nguồn gốc dân tộc Việt</li>
+                                <li>Tư tưởng đồng bào – cùng một cội nguồn</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tổ chức bộ máy nhà nước -->
+                    <div class="hk-card" style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--hk-ink); font-size: 1.2rem; margin-bottom: 0.8rem;">
+                            🔹 Tổ chức bộ máy nhà nước Văn Lang
+                        </h3>
+                        <ul style="margin: 0.8rem 0; padding-left: 1.5rem; color: var(--hk-muted); line-height: 1.8;">
+                            <li><strong>Đứng đầu:</strong> Hùng Vương</li>
+                            <li><strong>Giúp việc:</strong> Lạc hầu, Lạc tướng</li>
+                            <li>Cả nước chia thành <strong>15 bộ</strong></li>
+                            <li>Cha truyền con nối (chế độ cha truyền con nối)</li>
+                        </ul>
+                        <div style="background: rgba(201, 145, 90, 0.1); padding: 0.8rem; border-left: 3px solid var(--hk-gold); margin-top: 0.8rem; border-radius: 4px;">
+                            <strong style="color: var(--hk-ink);">Ý nghĩa:</strong>
+                            <p style="margin: 0.5rem 0 0 0;">Nhà nước sơ khai nhưng đã có tổ chức quản lý rõ ràng</p>
+                        </div>
+                    </div>
+
+                    <!-- Đời sống kinh tế -->
+                    <div class="hk-card" style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--hk-ink); font-size: 1.2rem; margin-bottom: 0.8rem;">
+                            🔹 Đời sống kinh tế
+                        </h3>
+                        <div style="margin: 0.8rem 0;">
+                            <p style="color: var(--hk-ink); font-weight: 700; margin-bottom: 0.5rem;">Nghề chính:</p>
+                            <ul style="margin: 0 0 1rem 1.5rem; padding-left: 0.5rem; color: var(--hk-muted); line-height: 1.8;">
+                                <li>Trồng lúa nước</li>
+                                <li>Chăn nuôi</li>
+                                <li>Đánh cá</li>
+                            </ul>
+                            <p style="color: var(--hk-ink); font-weight: 700; margin-bottom: 0.5rem;">Công cụ:</p>
+                            <ul style="margin: 0 0 0 1.5rem; padding-left: 0.5rem; color: var(--hk-muted); line-height: 1.8;">
+                                <li>Đồ đá → đồ đồng (trống đồng Đông Sơn)</li>
+                            </ul>
+                            <p style="color: var(--hk-ink); font-weight: 700; margin-bottom: 0.5rem;">Thủy lợi:</p>
+                            <ul style="margin: 0 0 0 1.5rem; padding-left: 0.5rem; color: var(--hk-muted); line-height: 1.8;">
+                                <li>Biết làm thủy lợi đơn giản</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(201, 145, 90, 0.1); padding: 0.8rem; border-left: 3px solid var(--hk-gold); margin-top: 0.8rem; border-radius: 4px;">
+                            <strong style="color: var(--hk-ink);">Ý nghĩa:</strong>
+                            <p style="margin: 0.5rem 0 0 0;">Nền tảng cho văn minh lúa nước Việt Nam</p>
+                        </div>
+                    </div>
+
+                    <!-- Đời sống văn hóa - xã hội -->
+                    <div class="hk-card" style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--hk-ink); font-size: 1.2rem; margin-bottom: 0.8rem;">
+                            🔹 Đời sống văn hóa – xã hội
+                        </h3>
+                        <div style="margin: 0.8rem 0;">
+                            <p style="color: var(--hk-ink); font-weight: 700; margin-bottom: 0.5rem;">Tín ngưỡng:</p>
+                            <ul style="margin: 0 0 1rem 1.5rem; padding-left: 0.5rem; color: var(--hk-muted); line-height: 1.8;">
+                                <li>Thờ các lực lượng tự nhiên</li>
+                                <li>Thờ tổ tiên</li>
+                            </ul>
+                            <p style="color: var(--hk-ink); font-weight: 700; margin-bottom: 0.5rem;">Phong tục:</p>
+                            <ul style="margin: 0 0 1rem 1.5rem; padding-left: 0.5rem; color: var(--hk-muted); line-height: 1.8;">
+                                <li>Ăn trầu</li>
+                                <li>Nhuộm răng</li>
+                                <li>Xăm mình</li>
+                            </ul>
+                            <p style="color: var(--hk-ink); font-weight: 700; margin-bottom: 0.5rem;">Lễ hội:</p>
+                            <ul style="margin: 0 0 0 1.5rem; padding-left: 0.5rem; color: var(--hk-muted); line-height: 1.8;">
+                                <li>Hội làng</li>
+                                <li>Tục giỗ Tổ Hùng Vương</li>
+                            </ul>
+                        </div>
+                        <div style="background: rgba(201, 145, 90, 0.1); padding: 0.8rem; border-left: 3px solid var(--hk-gold); margin-top: 0.8rem; border-radius: 4px;">
+                            <strong style="color: var(--hk-ink);">Ý nghĩa:</strong>
+                            <p style="margin: 0.5rem 0 0 0;">Hình thành bản sắc văn hóa Việt cổ</p>
+                        </div>
+                    </div>
+
+                    <!-- Các truyền thuyết tiêu biểu -->
+                    <div class="hk-card" style="margin-bottom: 1.5rem;">
+                        <h3 style="color: var(--hk-ink); font-size: 1.2rem; margin-bottom: 0.8rem;">
+                            🔹 Các truyền thuyết tiêu biểu thời Hùng Vương
+                        </h3>
+                        <ul style="margin: 0.8rem 0; padding-left: 1.5rem; color: var(--hk-muted); line-height: 1.8;">
+                            <li><strong>Sơn Tinh – Thủy Tinh</strong> → chống lũ lụt</li>
+                            <li><strong>Thánh Gióng</strong> → chống giặc ngoại xâm</li>
+                            <li><strong>Bánh chưng – bánh giầy</strong> → văn hóa nông nghiệp, trời – đất</li>
+                            <li><strong>Mai An Tiêm</strong> → tinh thần lao động, tự lực</li>
+                        </ul>
+                        <div style="background: rgba(201, 145, 90, 0.1); padding: 0.8rem; border-left: 3px solid var(--hk-gold); margin-top: 0.8rem; border-radius: 4px;">
+                            <strong style="color: var(--hk-ink);">Ý nghĩa chung:</strong>
+                            <p style="margin: 0.5rem 0 0 0;">Phản ánh: Điều kiện tự nhiên, Ước mơ, Tinh thần chống thiên tai, ngoại xâm</p>
+                        </div>
+                    </div>
+
+                    <!-- 258 TCN -->
+                    <div class="hk-card" style="margin-bottom: 0;">
+                        <h3 style="color: var(--hk-ink); font-size: 1.2rem; margin-bottom: 0.8rem;">
+                            🔹 258 TCN – Kết thúc thời Hùng Vương
+                        </h3>
+                        <ul style="margin: 0.8rem 0; padding-left: 1.5rem; color: var(--hk-muted); line-height: 1.8;">
+                            <li>Thục Phán (An Dương Vương) đánh bại Hùng Vương thứ XVIII</li>
+                            <li>Thành lập nước Âu Lạc</li>
+                            <li>Dời đô về Cổ Loa</li>
+                        </ul>
+                        <div style="background: rgba(201, 145, 90, 0.1); padding: 0.8rem; border-left: 3px solid var(--hk-gold); margin-top: 0.8rem; border-radius: 4px;">
+                            <strong style="color: var(--hk-ink);">Ý nghĩa:</strong>
+                            <ul style="margin: 0.5rem 0 0 1.2rem; padding-left: 0.5rem;">
+                                <li>Chuyển sang giai đoạn nhà nước phát triển cao hơn</li>
+                                <li>Kết thúc thời đại dựng nước đầu tiên</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Các thời kỳ -->
+    <section class="hk-section" id="cac-thoi-ky">
+        <div class="container">
+            <div class="hk-panel">
+                <h2 class="hk-section-title">Các thời kỳ phát triển của Thời Hùng Vương</h2>
+                <p class="hk-lead">
+                    Dựa trên Ngọc phả Hùng Vương và các nghiên cứu khảo cổ học, thời Hùng Vương có thể được phân chia thành các giai đoạn với những đặc điểm và biến đổi riêng biệt.
+                </p>
+
+                <div class="hk-cards">
+                    <div class="hk-card">
+                        <h3>🌱 Thời kỳ khởi nguyên (Kinh Dương Vương - Đời thứ nhất)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> Khoảng thế kỷ VII TCN (theo truyền thuyết: 2879 TCN)<br>
+                            <strong>Đặc điểm:</strong> Đây là giai đoạn hình thành nhà nước đầu tiên. Kinh Dương Vương đã có hai quyết định quan trọng về địa điểm đóng đô: 
+                            đầu tiên chọn núi Hùng Bảo Thứu Lĩnh ở Hoan Châu (Nghệ An ngày nay), sau đó chuyển về núi Nghĩa Lĩnh (Việt Trì, Phú Thọ) 
+                            và lập đô thành Phong Châu với quốc hiệu Văn Lang. Việc di chuyển kinh đô phản ánh quá trình tìm kiếm vị trí chiến lược tốt hơn 
+                            cho việc quản lý và phát triển đất nước.<br>
+                            <strong>Thách thức:</strong> Phải xây dựng cơ cấu nhà nước từ đầu, thiết lập quyền lực trung ương trên các bộ lạc địa phương.
+                        </p>
+                    </div>
+
+                    <div class="hk-card">
+                        <h3>🏛️ Thời kỳ củng cố (Lạc Long Quân - Đời thứ hai)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> Tiếp nối sau Kinh Dương Vương<br>
+                            <strong>Đặc điểm:</strong> Lạc Long Quân (Hùng Hiền Vương) được cử đóng tại đô thành mới ở Nghĩa Lĩnh. 
+                            Đây là thời kỳ quan trọng với việc thiết lập hệ thống hành chính: đặt quan văn (Lạc Hầu), tướng võ (Lạc Tướng), 
+                            các vương tử (Quan Lang), công chúa (Mị Nương), và quan hữu ti (Bồ Chính). Truyền thuyết "bọc trăm trứng" của Âu Cơ 
+                            phản ánh ý thức về nguồn gốc chung của cộng đồng và việc phân chia 50 con theo cha về biển, 50 con theo mẹ lên núi 
+                            thể hiện sự mở rộng lãnh thổ và phân công lao động theo địa hình.<br>
+                            <strong>Thành tựu:</strong> Hệ thống tổ chức nhà nước được định hình rõ ràng, tạo nền tảng cho các đời sau.
+                        </p>
+                    </div>
+
+                    <div class="hk-card">
+                        <h3>⚡ Thời kỳ phát triển rực rỡ (Đời thứ 3-7)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> Khoảng thế kỷ VI-IV TCN<br>
+                            <strong>Đặc điểm:</strong> Đây là thời kỳ đỉnh cao của văn hóa Đông Sơn và sự phát triển mạnh mẽ của nhà nước Văn Lang. 
+                            Kỹ thuật đúc đồng đạt đến trình độ tinh xảo với những trống đồng, thạp đồng có hoa văn phức tạp. Nông nghiệp lúa nước phát triển 
+                            trên đồng bằng sông Hồng, công cụ lao động bằng đồng (lưỡi cày, cuốc, rìu) được sử dụng rộng rãi. 
+                            Truyền thuyết Thánh Gióng đánh giặc Ân (đời thứ 6) phản ánh khả năng quân sự và tinh thần chống ngoại xâm.<br>
+                            <strong>Thành tựu:</strong> Nền kinh tế phát triển mạnh, văn hóa đạt đỉnh cao, xã hội ổn định với mô hình làng xã vững chắc.
+                        </p>
+                    </div>
+
+                    <div class="hk-card">
+                        <h3>📉 Thời kỳ suy yếu (Đời thứ 8-18)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> Khoảng thế kỷ IV-III TCN<br>
+                            <strong>Đặc điểm:</strong> Quyền lực trung ương dần suy yếu, các bộ lạc địa phương gia tăng ảnh hưởng. 
+                            Áp lực từ phương Bắc ngày càng lớn với sự hình thành và bành trướng của nhà Tần (221 TCN). 
+                            Nước Văn Lang không còn đủ sức để duy trì sự thống nhất và chống đỡ các mối đe dọa bên ngoài.<br>
+                            <strong>Khó khăn:</strong> Mâu thuẫn nội bộ, thiếu sự đoàn kết giữa các bộ lạc, công nghệ quân sự lạc hậu so với các nước lớn phương Bắc.
+                        </p>
+                    </div>
+
+                    <div class="hk-card">
+                        <h3>🔄 Chuyển tiếp sang Âu Lạc (Cuối thế kỷ III TCN)</h3>
+                        <p>
+                            <strong>Bối cảnh:</strong> Cuộc xâm lược của Tần Thủy Hoàng với hàng vạn quân Tần tràn vào lãnh thổ phía Bắc và đông bắc. 
+                            Cuộc kháng chiến chống Tần kéo dài 5-6 năm đã thắt chặt quan hệ giữa Lạc Việt và Tây Âu (Âu Việt).<br>
+                            <strong>Diễn biến:</strong> Thục Phán, thủ lĩnh người Tây Âu, được suy tôn làm chỉ huy cao nhất trong cuộc kháng chiến. 
+                            Sau khi đánh bại quân Tần, ông thay thế Hùng Vương, tự xưng An Dương Vương và lập nước Âu Lạc (khoảng 208 TCN), 
+                            đóng đô ở Cổ Loa (Hà Nội ngày nay).<br>
+                            <strong>Ý nghĩa:</strong> Đây không phải là sự thôn tính mà là sự hợp nhất của hai nhóm cư dân Lạc Việt và Tây Âu 
+                            để đối phó với mối đe dọa chung từ phương Bắc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thành tựu -->
+    <section class="hk-section" id="thanh-tuu">
+        <div class="container">
+            <div class="hk-panel">
+                <h2 class="hk-section-title">Thành tựu và ưu điểm của Thời Hùng Vương</h2>
+
+                <div class="hk-grid">
+                    <div class="hk-col-6">
+                        <h3 style="color: var(--hk-ink); font-size: 1.3rem; margin-bottom: 1rem;">🏆 Thành tựu kinh tế</h3>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Nông nghiệp lúa nước</span>
+                                <p class="v">Phát triển mạnh trên đồng bằng sông Hồng phì nhiêu. Cư dân đã biết khai phá, đắp đê, 
+                                tạo hệ thống tưới tiêu phục vụ canh tác lúa nước, tạo nền tảng lương thực ổn định cho xã hội.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Kỹ thuật luyện kim</span>
+                                <p class="v">Đạt trình độ cao với nghề đúc đồng thau. Công cụ lao động bằng đồng (lưỡi cày, cuốc, rìu, hái) 
+                                thay thế công cụ đá, tăng năng suất lao động. Kỹ thuật rèn sắt cũng bắt đầu phát triển.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Nghề thủ công chuyên môn hóa</span>
+                                <p class="v">Nghề đúc đồng đạt đỉnh cao thế giới với trống đồng Đông Sơn có hoa văn tinh xảo. 
+                                Các nghề làm gốm, dệt vải, đóng thuyền, xây dựng phát triển mạnh.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hk-col-6">
+                        <h3 style="color: var(--hk-ink); font-size: 1.3rem; margin-bottom: 1rem;">🎨 Thành tựu văn hóa</h3>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Văn hóa Đông Sơn</span>
+                                <p class="v">Được coi là thời kỳ rực rỡ của nền văn minh Việt cổ. Trống đồng Đông Sơn không chỉ là nhạc cụ 
+                                mà còn là biểu tượng quyền lực và tín ngưỡng. Hơn 250 trống đồng Heger I được phát hiện trên thế giới, 
+                                trong đó 137 chiếc ở Việt Nam.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Tổ chức xã hội</span>
+                                <p class="v">Mô hình làng xã (bản, thôn) quản lý dân bản hiệu quả, tạo nền tảng cho cấu trúc xã hội Việt Nam 
+                                sau này. Hệ thống phân cấp xã hội rõ ràng với vua Hùng, Lạc Hầu, Lạc Tướng, Quan Lang, Mị Nương.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Tín ngưỡng và lễ hội</span>
+                                <p class="v">Truyền thống thờ cúng tổ tiên được hình thành và phát triển, tạo nên bản sắc văn hóa độc đáo. 
+                                Tín ngưỡng thờ cúng Hùng Vương được UNESCO công nhận là Di sản văn hóa phi vật thể năm 2012.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hk-grid" style="margin-top: 2rem;">
+                    <div class="hk-col-12">
+                        <h3 style="color: var(--hk-ink); font-size: 1.3rem; margin-bottom: 1rem;">⚙️ Ưu điểm của mô hình nhà nước Văn Lang</h3>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Tính thống nhất trong đa dạng</span>
+                                <p class="v">Văn hóa Đông Sơn thể hiện sự đa dạng trong các lát cắt (cư trú, mai táng, tinh thần, sản xuất) 
+                                nhưng vẫn có tính thống nhất về bản sắc, tạo nên nền tảng cho sự hình thành dân tộc Việt.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Mô hình quản lý linh hoạt</span>
+                                <p class="v">Kết hợp giữa quyền lực trung ương (vua Hùng) với quyền tự trị của các làng xã, 
+                                cho phép địa phương phát triển theo đặc thù riêng nhưng vẫn gắn kết với trung ương.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Khả năng thích ứng</span>
+                                <p class="v">Nhà nước Văn Lang đã biết điều chỉnh và thích ứng với điều kiện tự nhiên (đồng bằng sông Hồng, 
+                                khí hậu nhiệt đới gió mùa) và các thách thức bên ngoài, thể hiện qua việc di chuyển kinh đô và phát triển công nghệ.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thách thức -->
+    <section class="hk-section" id="thach-thuc">
+        <div class="container">
+            <div class="hk-panel">
+                <h2 class="hk-section-title">Thách thức, khó khăn và nhược điểm</h2>
+
+                <div class="hk-grid">
+                    <div class="hk-col-6">
+                        <h3 style="color: var(--hk-ink); font-size: 1.3rem; margin-bottom: 1rem;">⚠️ Khó khăn về tự nhiên và kỹ thuật</h3>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Thách thức thủy lợi</span>
+                                <p class="v">Canh tác lúa nước đòi hỏi công trình tưới tiêu, đắp bờ, dẫn nước và ngăn lũ phức tạp. 
+                                Khí hậu không ổn định với mưa lũ, phong ba, bão tố thường xuyên đe dọa mùa màng và đời sống cư dân.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Hạn chế công nghệ</span>
+                                <p class="v">Dù đạt trình độ cao về đúc đồng, nhưng công nghệ quân sự vẫn còn thô sơ so với các nước lớn phương Bắc. 
+                                Vũ khí chủ yếu là giáo, mũi tên đồng, khiên, không có công nghệ chế tạo vũ khí tiên tiến như nỏ thần (chỉ có trong truyền thuyết).</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Địa hình phân tán</span>
+                                <p class="v">Địa hình đồi núi và sông ngòi phức tạp khiến việc giao thông và liên lạc giữa các vùng khó khăn, 
+                                ảnh hưởng đến khả năng tập trung lực lượng và quản lý thống nhất.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hk-col-6">
+                        <h3 style="color: var(--hk-ink); font-size: 1.3rem; margin-bottom: 1rem;">⚔️ Thách thức về quân sự và chính trị</h3>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Áp lực ngoại xâm</span>
+                                <p class="v">Vị trí chiến lược ở Đông Nam Á khiến Văn Lang thường xuyên đối diện với đe dọa từ phương Bắc. 
+                                Cuộc xâm lược của nhà Tần (221 TCN) với hàng vạn quân là thách thức lớn nhất, dẫn đến sự suy yếu và chuyển tiếp sang Âu Lạc.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Mâu thuẫn nội bộ</span>
+                                <p class="v">Quyền lực trung ương suy yếu vào cuối thời kỳ khiến các bộ lạc địa phương gia tăng ảnh hưởng, 
+                                thiếu sự đoàn kết và thống nhất trong việc đối phó với kẻ thù chung.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Thiếu cơ chế kế thừa rõ ràng</span>
+                                <p class="v">Hệ thống truyền ngôi theo truyền thuyết có nhiều điểm mơ hồ. Việc "18 đời vua" trị vì trong hơn 2.600 năm 
+                                là không thực tế, phản ánh sự thiếu chính xác trong ghi chép và có thể là nguyên nhân gây mất ổn định chính trị.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hk-grid" style="margin-top: 2rem;">
+                    <div class="hk-col-12">
+                        <h3 style="color: var(--hk-ink); font-size: 1.3rem; margin-bottom: 1rem;">📉 Nhược điểm của mô hình nhà nước Văn Lang</h3>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Cấu trúc nhà nước lỏng lẻo</span>
+                                <p class="v">Nhà nước Văn Lang là một liên minh các bộ lạc dưới quyền vua Hùng, chưa phải là một nhà nước tập quyền mạnh. 
+                                Quyền lực của vua Hùng chủ yếu mang tính tượng trưng và điều phối, không có hệ thống hành chính tập trung chặt chẽ.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Hạn chế về ghi chép lịch sử</span>
+                                <p class="v">Do trải qua hơn 1.000 năm Bắc thuộc, nhiều tài liệu lịch sử bị mất mát. 
+                                Thông tin về thời Hùng Vương chủ yếu dựa vào truyền thuyết, Ngọc phả và khảo cổ học, 
+                                khiến việc nghiên cứu và hiểu biết về giai đoạn này còn nhiều khoảng trống.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Phạm vi địa lý hạn chế</span>
+                                <p class="v">Văn hóa Đông Sơn và nhà nước Văn Lang chủ yếu phân bố ở miền Bắc và Bắc Trung bộ Việt Nam, 
+                                chưa mở rộng ra toàn bộ lãnh thổ như các nhà nước sau này.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Thiếu khả năng phòng thủ lâu dài</span>
+                                <p class="v">Dù có thành trì và hệ thống phòng thủ, nhưng Văn Lang không thể chống lại được các cuộc xâm lược quy mô lớn 
+                                từ các đế chế phương Bắc có công nghệ và tổ chức quân sự vượt trội.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chuyển tiếp -->
+    <section class="hk-section" id="chuyen-tiep">
+        <div class="container">
+            <div class="hk-panel">
+                <h2 class="hk-section-title">Sự chuyển tiếp từ Văn Lang sang Âu Lạc: Nguyên nhân và ý nghĩa</h2>
+
+                <div class="hk-grid">
+                    <div class="hk-col-7">
+                        <h3 style="color: var(--hk-ink); font-size: 1.3rem; margin-bottom: 1rem;">🔄 Nguyên nhân chuyển tiếp</h3>
+                        <p class="hk-lead">
+                            Sự thành lập nước Âu Lạc không phải là kết quả của một cuộc chiến tranh thôn tính, mà là một sự hợp nhất 
+                            cư dân và đất đai của Lạc Việt và Tây Âu để đối phó với mối đe dọa chung từ phương Bắc.
+                        </p>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Cuộc xâm lược của nhà Tần</span>
+                                <p class="v">Năm 221 TCN, Tần Thủy Hoàng thống nhất Trung Quốc và tiến hành các cuộc chiến tranh xâm lược đại quy mô. 
+                                Hàng vạn quân Tần tràn vào lãnh thổ phía Bắc và đông bắc nước Việt Nam lúc đó, đe dọa sự tồn tại của Văn Lang.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Sự suy yếu của Văn Lang</span>
+                                <p class="v">Vào cuối thời Hùng Vương, quyền lực trung ương suy yếu, các bộ lạc địa phương gia tăng ảnh hưởng, 
+                                thiếu sự đoàn kết và thống nhất trong việc đối phó với kẻ thù chung.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Nhu cầu liên kết</span>
+                                <p class="v">Hai tộc người Lạc Việt và Tây Âu (Âu Việt), gần gũi nhau về dòng máu, địa vực, kinh tế và văn hóa, 
+                                có điều kiện liên kết chặt chẽ hơn để đối chọi với kẻ thù chung. Cuộc kháng chiến chống Tần kéo dài 5-6 năm 
+                                đã thắt chặt quan hệ đoàn kết giữa hai tộc người này.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hk-col-5">
+                        <h3 style="color: var(--hk-ink); font-size: 1.3rem; margin-bottom: 1rem;">🏛️ Thành tựu của Âu Lạc</h3>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Thành Cổ Loa</span>
+                                <p class="v">An Dương Vương đã xây dựng thành Cổ Loa với 3 vòng thành kiên cố, chu vi ngoài 8km, 
+                                diện tích trung tâm 2 km². Đây là công trình phòng thủ sớm nhất và thể hiện trình độ kỹ thuật cao của người Việt cổ.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Tổ chức quân sự</span>
+                                <p class="v">Cổ Loa là căn cứ kết hợp hài hòa thủy binh cùng bộ binh, với hệ thống hào nước thông nhau, 
+                                cho phép phối hợp tác chiến trên cả bộ và nước.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Phát triển kinh tế</span>
+                                <p class="v">Việc chọn Cổ Loa làm kinh đô phản ánh sự dịch chuyển trung tâm kinh tế về đồng bằng sông Hồng, 
+                                nơi cư dân đã khai phá và biến đổi toàn bộ châu thổ thành đất nông nghiệp và làng mạc.</p>
+                            </div>
+                        </div>
+                        <p class="hk-inline-note" style="margin-top: 1rem;">
+                            Tuy nhiên, Âu Lạc chỉ tồn tại khoảng 30 năm (208-179 TCN) trước khi bị Nam Việt của Triệu Đà đánh bại, 
+                            mở đầu cho thời kỳ Bắc thuộc kéo dài hơn 1.000 năm.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Văn hoá -->
+    <section class="hk-section" id="van-hoa">
+        <div class="container">
+            <div class="hk-grid">
+                <div class="hk-col-6">
+                    <div class="hk-image-card">
+                        <img src="../../assets/images/0ab35df5-901a-495e-ba71-c9bcc74c949c.png" alt="Hiện vật/hoa văn minh hoạ (Đông Sơn)">
+                        <div class="hk-image-caption">
+                            Gợi ý triển lãm: dùng ảnh hiện vật/hoa văn Đông Sơn (ảnh minh hoạ trong dự án).
+                        </div>
+                    </div>
+                </div>
+                <div class="hk-col-6">
+                    <div class="hk-panel">
+                        <h2 class="hk-section-title">Văn hoá – đời sống: từ nông nghiệp lúa nước đến nghệ thuật trống đồng</h2>
+                        <p class="hk-lead">
+                            Theo giới thiệu trưng bày của Bảo tàng Lịch sử Quốc gia về Văn Lang – Âu Lạc, đời sống vật chất và tinh thần
+                            cư dân thời kỳ này được phản ánh qua truyền thuyết, thư tịch cổ và hệ thống di tích – lễ hội (đậm đặc ở Phú Thọ),
+                            đồng thời được “minh chứng” bởi các di vật khảo cổ Đông Sơn.
+                        </p>
+                        <div class="hk-facts">
+                            <div class="hk-fact">
+                                <span class="k">Kinh tế</span>
+                                <p class="v">Nền tảng nông nghiệp, đặc biệt canh tác lúa nước.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Kỹ thuật</span>
+                                <p class="v">Công cụ lao động, vũ khí, nghề đúc đồng (trống đồng) nổi bật.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Xã hội</span>
+                                <p class="v">Có tổ chức cộng đồng – lễ nghi, lễ hội, truyền thống thờ cúng tổ tiên.</p>
+                            </div>
+                            <div class="hk-fact">
+                                <span class="k">Di sản tinh thần</span>
+                                <p class="v">Gắn với Đền Hùng, Nghĩa Lĩnh (Phú Thọ) và thực hành thờ cúng Hùng Vương.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tín ngưỡng / UNESCO -->
+    <section class="hk-section" id="tin-nguong">
+        <div class="container">
+            <div class="hk-panel">
+                <h2 class="hk-section-title">Tín ngưỡng thờ cúng Hùng Vương (Phú Thọ) & UNESCO</h2>
+                <p class="hk-lead">
+                    UNESCO ghi danh <strong>“Worship of Hùng kings in Phú Thọ”</strong> (Tín ngưỡng thờ cúng Hùng Vương ở Phú Thọ)
+                    vào năm <strong>2012</strong> trong Danh sách Di sản văn hóa phi vật thể đại diện của nhân loại.
+                    UNESCO mô tả hàng năm <strong>hàng triệu người</strong> hành hương về Đền Hùng (núi Nghĩa Lĩnh, Phú Thọ),
+                    nghi lễ lớn nhất diễn ra khoảng <strong>một tuần</strong> vào đầu <strong>tháng 3 âm lịch</strong>, với rước kiệu, dâng lễ (bánh chưng, bánh giầy),
+                    diễn xướng dân gian, đánh trống đồng và hát Xoan.
+                </p>
+                <div class="hk-hero-actions" style="margin-top: 14px;">
+                    <a class="hk-chip" href="https://ich.unesco.org/en/RL/worship-of-hung-kings-in-phu-th-00735" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Xem trang UNESCO
+                    </a>
+                    <a class="hk-chip" href="../map.html">
+                        <i class="fa-solid fa-map-location-dot"></i> Mở Bản đồ bảo tàng
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nguồn -->
+    <section class="hk-section" id="nguon">
+        <div class="container">
+            <div class="hk-panel">
+                <h2 class="hk-section-title">Nguồn tham khảo chính thống</h2>
+                <ul class="hk-sources">
+                    <li>
+                        <a href="https://baotanglichsu.vn/vi/Articles/4043/nha-nuoc-van-lang-au-lac" target="_blank" rel="noopener noreferrer">
+                            Bảo tàng Lịch sử Quốc gia: “Nhà nước Văn Lang - Âu Lạc”
+                        </a>
+                        <span class="meta">Tóm tắt mốc hình thành, kinh đô Phong Châu và chuyển tiếp sang Âu Lạc (Cổ Loa); nhấn mạnh lớp chứng cứ khảo cổ Đông Sơn.</span>
+                    </li>
+                    <li>
+                        <a href="https://baotanglichsu.vn/vi/Articles/2001/65120/co-bao-nhieu-djoi-vua-hung.html" target="_blank" rel="noopener noreferrer">
+                            Bảo tàng Lịch sử Quốc gia: “Có bao nhiêu đời vua Hùng?”
+                        </a>
+                        <span class="meta">Thảo luận “18 đời” trong truyền thống và cách hiểu “18 ngành/chi” dựa trên Ngọc phả, thần tích và các nguồn sử.</span>
+                    </li>
+                    <li>
+                        <a href="https://ich.unesco.org/en/RL/worship-of-hung-kings-in-phu-th-00735" target="_blank" rel="noopener noreferrer">
+                            UNESCO ICH: “Worship of Hùng kings in Phú Thọ” (No.00735)
+                        </a>
+                        <span class="meta">Ghi danh 2012, mô tả thực hành nghi lễ, thời điểm lễ lớn, các hình thức diễn xướng và ý nghĩa gắn kết cộng đồng.</span>
+                    </li>
+                </ul>
+                <p class="hk-inline-note">
+                    Nếu bạn muốn mình bổ sung thêm “hiện vật tiêu biểu” (trống đồng, đồ đồng Đông Sơn…) theo đúng sưu tập/triển lãm,
+                    mình có thể gắn thêm thẻ ảnh + mô tả theo các bài trưng bày cụ thể của Bảo tàng Lịch sử Quốc gia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bảo Tàng Lịch Sử Việt Nam. Bảo Tồn Di Sản - Nơi Lịch Sử Sống.</p>
+    </footer>
+
+    <script src="../../js/navigation.js"></script>
+</body>
+</html>
