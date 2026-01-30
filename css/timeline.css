@@ -118,6 +118,47 @@ html, body {
     color: var(--primary-dark);
     transform: translateX(3px);
 }
+.action-buttons {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Style chung */
+.btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 0 0.6rem;
+}
+
+/* Nút chính */
+.btn-solid {
+    background: #8b0000; /* cùng màu nền */
+    color: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+    border: 2px solid #8b0000;
+}
+
+.btn-solid:hover {
+    background: #a00000;
+    transform: translateY(-3px);
+}
+
+/* Nút phụ – cùng màu nhưng nhạt hơn */
+.btn-light {
+    background: rgba(139, 0, 0, 0.15);
+    color: #8b0000;
+    border: 2px solid #8b0000;
+}
+
+.btn-light:hover {
+    background: #8b0000;
+    color: #fff;
+}
 
 @media (max-width: 768px) {
     .timeline::before {
