@@ -227,24 +227,11 @@ footer {
     justify-content: center;
     overflow: hidden;
     padding:  100px 0 80px;
-    margin-bottom: 30px;  /* 👈 tách section dưới */
+    margin-bottom: 30px;  /* 👈 tách section dưới */  
 }
 
 
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: 
-        linear-gradient(135deg, rgba(211, 47, 47, 0.7) 0%, rgba(139, 0, 0, 0.8) 100%),
-        url('../assets/images/908820f8-1293-432a-b2d4-1819dc8c1f91.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: 0;
-}
+
 
 .hero-content-wrapper {
     display: grid;
@@ -304,10 +291,11 @@ footer {
             rgba(60, 40, 25, 0.25),
             rgba(120, 90, 60, 0.35)
         ), url("../assets/images/ChatGPT Image 00_57_28 26 thg 1, 2026.png");
-    background-size: cover;
+    background-size: cover; 
     background-position: center;
     transform: translateY(var(--scroll, 0));
     will-change: transform;
+    
 }
 
 .hero-section {
