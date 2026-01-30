@@ -1,0 +1,474 @@
+/* Bac Thuoc page (Thời Bắc Thuộc) */
+
+:root {
+  --bt-ink: #1a1a1a;
+  --bt-muted: rgba(26, 26, 26, 0.75);
+  --bt-paper: rgba(255, 255, 255, 0.94);
+  --bt-line: rgba(26, 26, 26, 0.16);
+  --bt-gold: #e6b800;
+  --bt-bronze: #cd7f32;
+  --bt-silver: #c0c0c0;
+}
+
+
+.bt-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0 48px 30px;
+  min-height: 80vh;
+}
+
+.bt-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:url("../assets/images/nen3.png");
+  background-size: cover;
+  background-position:center center;
+  transform: scale(1.02);
+  z-index: 0;
+}
+
+.bt-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.bt-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 50px;
+}
+
+.bt-breadcrumb a {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+}
+
+.bt-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.bt-title {
+  color: #fff;
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 1.12;
+  margin-bottom: 100px;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+}
+
+.bt-subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 860px;
+  margin-bottom: 18px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.bt-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.bt-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.bt-chip:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.bt-section {
+  position: relative;
+  padding: 42px 0;
+}
+
+.bt-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.bt-panel {
+  background: var(--bt-paper);
+  border: 1px solid var(--bt-line);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+  background-image:
+  linear-gradient(
+            135deg,
+            rgba(40, 40, 40, 0.25),
+            rgba(80, 80, 80, 0.35)
+        ), url("../assets/images/z7474903426349_f1cd67888dedf7df463e36eff205fa4f.jpg") ;
+}
+
+.bt-section-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 14px;
+  font-family: "Times New Roman", serif;
+}
+
+.bt-lead {
+  color: white;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.bt-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+.bt-col-7 { grid-column: span 7; }
+.bt-col-5 { grid-column: span 5; }
+.bt-col-6 { grid-column: span 6; }
+.bt-col-4 { grid-column: span 4; }
+.bt-col-12 { grid-column: span 12; }
+
+.bt-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.bt-fact {
+  border: 1px solid var(--bt-line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 12px 14px;
+}
+
+.bt-fact .k {
+  display: block;
+  font-weight: 800;
+  color: var(--bt-ink);
+  margin-bottom: 4px;
+}
+
+.bt-fact .v {
+  color: var(--bt-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.bt-image-card {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--bt-line);
+  box-shadow: 0 16px 55px rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+.bt-image-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.bt-image-caption {
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: black;
+  border-top: 1px solid var(--bt-line);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.bt-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.bt-card {
+  border: 1px solid var(--bt-line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 16px 16px 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bt-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14);
+}
+
+.bt-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  color: var(--bt-ink);
+  font-weight: 800;
+}
+
+.bt-card p {
+  margin: 0;
+  color: var(--bt-muted);
+  line-height: 1.7;
+  font-size: 0.96rem;
+}
+
+.bt-sources {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.bt-sources li {
+  border: 1px solid var(--bt-line);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.bt-sources a {
+  color: var(--primary, #d32f2f);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.bt-sources a:hover {
+  text-decoration: underline;
+}
+
+.bt-sources .meta {
+  display: block;
+  color: var(--bt-muted);
+  margin-top: 4px;
+  line-height: 1.55;
+}
+
+.bt-inline-note {
+  font-size: 0.92rem;
+  color: white;
+  margin-top: 10px;
+}
+
+/* New styles for enhanced elements */
+.bt-summary-part {
+  margin-bottom: 2.5rem;
+}
+
+.bt-part-title {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--bt-line);
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bt-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: var(--bt-gold);
+  color: var(--bt-ink);
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+.bt-summary-list {
+  display: grid;
+  gap: 16px;
+}
+
+.bt-summary-item {
+  border: 1px solid var(--bt-line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bt-summary-item:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.bt-summary-item h3 {
+  font-size: 1.15rem;
+  margin: 0 0 10px 0;
+  color: var(--bt-ink);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bt-summary-item ul {
+  margin: 0 0 12px 0;
+  padding-left: 20px;
+  color: var(--bt-muted);
+}
+
+.bt-summary-item li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.bt-meaning-box {
+  background: rgba(230, 184, 0, 0.15);
+  border: 1px solid rgba(230, 184, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-top: 8px;
+}
+
+.bt-meaning-box strong {
+  color: var(--bt-ink);
+  font-weight: 800;
+}
+
+.bt-meaning-box ul {
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+}
+
+.bt-meaning-box p {
+  margin: 6px 0 0 0;
+  color: var(--bt-muted);
+}
+
+.bt-subsection-title {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--bt-line);
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bt-card-num {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.bt-card-num > span {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: var(--bt-gold);
+  color: var(--bt-ink);
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.bt-card-num > div {
+  flex: 1;
+}
+
+.bt-card-num h3 {
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+  color: var(--bt-ink);
+  font-weight: 800;
+}
+
+.bt-card-num p {
+  margin: 0;
+  color: var(--bt-muted);
+  line-height: 1.7;
+  font-size: 0.96rem;
+}
+
+.bt-chip i {
+  font-size: 1rem;
+}
+
+/* Bronze and Silver color variants for different sections */
+.bt-bronze-card {
+  background: rgba(205, 127, 50, 0.1);
+  border-color: rgba(205, 127, 50, 0.3);
+}
+
+.bt-silver-card {
+  background: rgba(192, 192, 192, 0.1);
+  border-color: rgba(192, 192, 192, 0.3);
+}
+
+@media (max-width: 992px) {
+  .bt-col-7,
+  .bt-col-5,
+  .bt-col-6,
+  .bt-col-4 {
+    grid-column: span 12;
+  }
+
+  .bt-image-card img {
+    height: 280px;
+  }
+
+  .bt-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .bt-facts {
+    grid-template-columns: 1fr;
+  }
+  
+  .bt-part-title {
+    font-size: 1.2rem;
+  }
+  
+  .bt-num {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+  
+  .bt-card-num > span {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9rem;
+  }
+  
+  .bt-card-num h3 {
+    font-size: 1.1rem;
+  }
+}

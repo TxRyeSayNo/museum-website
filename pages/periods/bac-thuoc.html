@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thời Bắc Thuộc - Bảo Tàng Lịch Sử Việt Nam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/bac-thuoc.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="location.href='../../index.html'">
+                <span class="logo-circle">
+                    <div class="logo-image">
+                        <img src="../../assets/images/z7466353692132_c4290ee6f126bd5eeb17054044c74d9d.jpg" alt="Logo VN">
+                    </div>
+                </span>
+                <div class="logo-text">
+                    <h1>Bảo Tàng Lịch Sử Việt Nam</h1>
+                    <p>Vietnamese History Museum</p>
+                </div>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Mở menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../../index.html">Trang Chủ</a></li>
+                <li><a href="../timeline.html">Dòng Lịch Sử</a></li>
+                <li><a href="../map.html">Bản Đồ Bảo Tàng</a></li>
+                <li><a href="../quiz.html">Kiểm Tra</a></li>
+                <li><a href="../progress.html">Tiến Trình</a></li>
+                <li><a href="../login.html">Đăng Nhập</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="bt-hero">
+        <div class="container">
+            <div class="bt-breadcrumb">
+                <a href="../../index.html">Trang chủ</a>
+                <span>›</span>
+                <a href="../timeline.html">Dòng lịch sử</a>
+                <span>›</span>
+                <span>Thời Bắc Thuộc</span>
+            </div>
+
+            <h1 class="bt-title">🏛️ Thời Bắc Thuộc<br><span style="color: var(--bt-gold)">1000 Năm Dưới Ách Đô Hộ</span></h1>
+
+            <div class="bt-hero-actions">
+                <a class="bt-chip" href="#tong-quan"><i class="fa-solid fa-compass"></i> Tổng quan</a>
+                <a class="bt-chip" href="#cac-dynasty"><i class="fa-solid fa-clock"></i> Các triều đại</a>
+                <a class="bt-chip" href="#khang-chien"><i class="fa-solid fa-swords"></i> Kháng chiến</a>
+                <a class="bt-chip" href="#van-hoa"><i class="fa-solid fa-landmark"></i> Văn hóa</a>
+                <a class="bt-chip" href="#nhan-vat"><i class="fa-solid fa-users"></i> Nhân vật</a>
+                <a class="bt-chip" href="#di-san"><i class="fa-solid fa-monument"></i> Di sản</a>
+                <a class="bt-chip" href="#nguon"><i class="fa-solid fa-link"></i> Nguồn tham khảo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tổng quan -->
+    <section class="bt-section" id="tong-quan">
+        <div class="container">
+            <div class="bt-grid">
+                <div class="bt-col-7">
+                    <div class="bt-panel">
+                        <h2 class="bt-section-title">Tổng quan</h2>
+                        <p class="bt-lead">
+                            Thời Bắc Thuộc (111 TCN - 938) là giai đoạn Việt Nam bị các triều đại phong kiến Trung Hoa đô hộ trong suốt hơn 1000 năm.
+                            Đây là một trong những giai đoạn dài nhất và quan trọng nhất trong lịch sử dân tộc, đánh dấu sự giao thoa văn hóa sâu sắc
+                            nhưng cũng là thời kỳ của những cuộc khởi nghĩa anh dũng nhằm giành lại độc lập dân tộc.
+                        </p>
+
+                        <div class="bt-facts">
+                            <div class="bt-fact">
+                                <span class="k">Thời gian</span>
+                                <p class="v">111 TCN - 938 (hơn 1000 năm)</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Các triều đại đô hộ</span>
+                                <p class="v">Nhà Hán, Nhà Tùy, Nhà Đường, Nhà Nam Hán</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Tên gọi thời kỳ</span>
+                                <p class="v">Giao Chỉ, Giao Châu, An Nam đô hộ phủ</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Kết thúc</span>
+                                <p class="v">Chiến thắng Bạch Đằng (938) - Ngô Quyền</p>
+                            </div>
+                        </div>
+
+                        <p class="bt-inline-note">
+                            Lưu ý: Thời Bắc Thuộc là giai đoạn phức tạp với nhiều biến động chính trị, văn hóa và xã hội.
+                            Các thông tin trong bài được tổng hợp từ các nguồn sử liệu chính thống và nghiên cứu khảo cổ học.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bt-col-5">
+                    <div class="bt-image-card">
+                        <img src="../../assets/images/bacthuoc1_15012024104236.jpg" alt="Hình minh họa Thời Bắc Thuộc">
+                        <div class="bt-image-caption">
+                            Hình minh họa: Thời kỳ Bắc thuộc trong lịch sử Việt Nam
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Các triều đại -->
+    <section class="bt-section" id="cac-dynasty">
+        <div class="container">
+            <div class="bt-panel">
+                <h2 class="bt-section-title">Các triều đại phong kiến Trung Hoa đô hộ</h2>
+                <p class="bt-lead">
+                    Trong hơn 1000 năm Bắc thuộc, Việt Nam lần lượt chịu sự đô hộ của các triều đại phong kiến Trung Hoa với những chính sách cai trị khác nhau.
+                </p>
+
+                <div class="bt-cards">
+                    <div class="bt-card">
+                        <h3>🏛️ Nhà Hán (111 TCN - 39)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 111 TCN - 39<br>
+                            <strong>Chính sách:</strong> Đồng hóa mạnh mẽ, cải cách hành chính, đưa người Hán sang cai trị<br>
+                            <strong>Phản ứng:</strong> Khởi nghĩa Hai Bà Trưng (40-43)<br>
+                            <strong>Ý nghĩa:</strong> Bắt đầu thời kỳ Bắc thuộc, thiết lập nền tảng đô hộ lâu dài
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>🛡️ Nhà Đông Hán (43-220)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 43-220<br>
+                            <strong>Chính sách:</strong> Củng cố cai trị, phát triển nông nghiệp, kiểm soát chặt chẽ<br>
+                            <strong>Phản ứng:</strong> Các cuộc khởi nghĩa nhỏ lẻ<br>
+                            <strong>Ý nghĩa:</strong> Củng cố nền móng đô hộ, chuẩn bị cho thời kỳ phát triển
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>🌾 Nhà Ngô (220-280)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 220-280<br>
+                            <strong>Chính sách:</strong> Phát triển kinh tế, khai thác tài nguyên, kiểm soát giao thương<br>
+                            <strong>Phản ứng:</strong> Khởi nghĩa Lý Bôn (542-602)<br>
+                            <strong>Ý nghĩa:</strong> Thời kỳ phát triển kinh tế, chuẩn bị cho các cuộc khởi nghĩa lớn
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>🏯 Nhà Tùy (581-618)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 581-618<br>
+                            <strong>Chính sách:</strong> Cải cách hành chính, xây dựng thành quách, kiểm soát chặt chẽ<br>
+                            <strong>Phản ứng:</strong> Các cuộc khởi nghĩa chuẩn bị cho thời kỳ độc lập<br>
+                            <strong>Ý nghĩa:</strong> Củng cố cai trị, chuẩn bị cho thời kỳ chuyển biến
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>🌟 Nhà Đường (618-905)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 618-905<br>
+                            <strong>Chính sách:</strong> Cải cách hành chính sâu rộng, phát triển văn hóa, giáo dục<br>
+                            <strong>Phản ứng:</strong> Khởi nghĩa Mai Thúc Loan (722), Phùng Hưng (766-791)<br>
+                            <strong>Ý nghĩa:</strong> Thời kỳ phát triển văn hóa, chuẩn bị cho độc lập hoàn toàn
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>⚔️ Nhà Nam Hán (905-938)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 905-938<br>
+                            <strong>Chính sách:</strong> Cai trị yếu kém, suy yếu quyền lực trung ương<br>
+                            <strong>Phản ứng:</strong> Khởi nghĩa Ngô Quyền (931-938)<br>
+                            <strong>Ý nghĩa:</strong> Kết thúc thời kỳ Bắc thuộc, mở ra thời kỳ độc lập
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kháng chiến -->
+    <section class="bt-section" id="khang-chien">
+        <div class="container">
+            <div class="bt-panel">
+                <h2 class="bt-section-title">Các cuộc khởi nghĩa tiêu biểu</h2>
+                <p class="bt-lead">
+                    Trong suốt thời kỳ Bắc thuộc, nhân dân ta đã liên tục đứng lên đấu tranh chống lại ách đô hộ của các triều đại phong kiến Trung Hoa.
+                </p>
+
+                <div class="bt-summary-list">
+                    <!-- Khởi nghĩa Hai Bà Trưng -->
+                    <div class="bt-summary-item">
+                        <h3><span class="bt-num">🔹</span> Khởi nghĩa Hai Bà Trưng (40-43)</h3>
+                        <ul>
+                            <li>Lãnh đạo: Trưng Trắc, Trưng Nhị</li>
+                            <li>Nguyên nhân: Phu nhân Thi Sách bị giết, chính sách hà khắc của Tô Định</li>
+                            <li>Diễn biến: Nổi dậy ở Mê Linh, chiếm lại 65 thành trì</li>
+                            <li>Kết quả: Thành lập nhà nước độc lập, kéo dài 3 năm</li>
+                        </ul>
+                        <div class="bt-meaning-box">
+                            <strong>Ý nghĩa:</strong>
+                            <ul>
+                                <li>Khẳng định tinh thần bất khuất của dân tộc</li>
+                                <li>Chứng minh khả năng tự chủ của người Việt</li>
+                                <li>Truyền cảm hứng cho các cuộc khởi nghĩa sau này</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Khởi nghĩa Bà Triệu -->
+                    <div class="bt-summary-item">
+                        <h3><span class="bt-num">🔹</span> Khởi nghĩa Bà Triệu (248)</h3>
+                        <ul>
+                            <li>Lãnh đạo: Triệu Thị Trinh</li>
+                            <li>Nguyên nhân: Bất mãn chính sách cai trị hà khắc</li>
+                            <li>Diễn biến: Nổi dậy ở Phú Điền, đánh chiếm nhiều quận huyện</li>
+                            <li>Kết quả: Bị dập tắt sau 1 năm, nhưng để lại tinh thần bất khuất</li>
+                        </ul>
+                        <div class="bt-meaning-box">
+                            <strong>Ý nghĩa:</strong>
+                            <ul>
+                                <li>Khẳng định vai trò của phụ nữ trong lịch sử</li>
+                                <li>Thể hiện tinh thần yêu nước, khát vọng tự do</li>
+                                <li>Truyền thống "giặc đến nhà, đàn bà cũng đánh"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Khởi nghĩa Lý Bôn -->
+                    <div class="bt-summary-item">
+                        <h3><span class="bt-num">🔹</span> Khởi nghĩa Lý Bôn (542-602)</h3>
+                        <ul>
+                            <li>Lãnh đạo: Lý Bôn</li>
+                            <li>Nguyên nhân: Bất mãn chính sách cai trị của nhà Lương</li>
+                            <li>Diễn biến: Nổi dậy ở Thái Bình, lập nên nước Vạn Xuân</li>
+                            <li>Kết quả: Duy trì độc lập 60 năm, đánh dấu bước phát triển mới</li>
+                        </ul>
+                        <div class="bt-meaning-box">
+                            <strong>Ý nghĩa:</strong>
+                            <ul>
+                                <li>Lập nên nhà nước Vạn Xuân - nhà nước độc lập đầu tiên</li>
+                                <li>Chứng minh khả năng xây dựng nhà nước độc lập</li>
+                                <li>Tạo tiền đề cho các cuộc đấu tranh sau này</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Khởi nghĩa Mai Thúc Loan -->
+                    <div class="bt-summary-item">
+                        <h3><span class="bt-num">🔹</span> Khởi nghĩa Mai Thúc Loan (722)</h3>
+                        <ul>
+                            <li>Lãnh đạo: Mai Thúc Loan</li>
+                            <li>Nguyên nhân: Bất mãn chính sách thuế khóa nặng nề</li>
+                            <li>Diễn biến: Nổi dậy ở Hà Tĩnh, chiếm lại 65 châu</li>
+                            <li>Kết quả: Bị dập tắt, nhưng thể hiện sức mạnh tiềm tàng</li>
+                        </ul>
+                        <div class="bt-meaning-box">
+                            <strong>Ý nghĩa:</strong>
+                            <ul>
+                                <li>Thể hiện sức mạnh của nhân dân lao động</li>
+                                <li>Chứng minh sự bất ổn trong chính sách cai trị</li>
+                                <li>Chuẩn bị lực lượng cho các cuộc khởi nghĩa sau</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Khởi nghĩa Phùng Hưng -->
+                    <div class="bt-summary-item">
+                        <h3><span class="bt-num">🔹</span> Khởi nghĩa Phùng Hưng (766-791)</h3>
+                        <ul>
+                            <li>Lãnh đạo: Phùng Hưng</li>
+                            <li>Nguyên nhân: Bất mãn chính sách cai trị hà khắc</li>
+                            <li>Diễn biến: Nổi dậy ở Đường Hào, chiếm lại Tống Bình</li>
+                            <li>Kết quả: Được nhân dân suy tôn là "Bố Cái Đại Vương"</li>
+                        </ul>
+                        <div class="bt-meaning-box">
+                            <strong>Ý nghĩa:</strong>
+                            <ul>
+                                <li>Thể hiện uy tín và ảnh hưởng sâu rộng</li>
+                                <li>Chứng minh khả năng lãnh đạo của người Việt</li>
+                                <li>Tạo tiền đề cho độc lập hoàn toàn</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Khởi nghĩa Ngô Quyền -->
+                    <div class="bt-summary-item">
+                        <h3><span class="bt-num">🔹</span> Khởi nghĩa Ngô Quyền (931-938)</h3>
+                        <ul>
+                            <li>Lãnh đạo: Ngô Quyền</li>
+                            <li>Nguyên nhân: Bất mãn chính sách cai trị yếu kém</li>
+                            <li>Diễn biến: Đánh bại Kiều Công Tiễn, chuẩn bị kháng chiến</li>
+                            <li>Kết quả: Chiến thắng Bạch Đằng (938), chấm dứt Bắc thuộc</li>
+                        </ul>
+                        <div class="bt-meaning-box">
+                            <strong>Ý nghĩa:</strong>
+                            <ul>
+                                <li>Chấm dứt hơn 1000 năm Bắc thuộc</li>
+                                <li>Mở ra thời kỳ độc lập, tự chủ</li>
+                                <li>Khẳng định chủ quyền dân tộc</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Văn hóa -->
+    <section class="bt-section" id="van-hoa">
+        <div class="container">
+            <div class="bt-panel">
+                <h2 class="bt-section-title">Ảnh hưởng văn hóa và giao thoa</h2>
+                <p class="bt-lead">
+                    Thời Bắc thuộc là giai đoạn giao thoa văn hóa sâu sắc giữa văn hóa bản địa và văn hóa Trung Hoa, tạo nên nền tảng cho sự phát triển văn hóa Việt Nam sau này.
+                </p>
+
+                <div class="bt-grid">
+                    <div class="bt-col-6">
+                        <h3 style="color: var(--bt-ink); font-size: 1.3rem; margin-bottom: 1rem;">📚 Ảnh hưởng tích cực</h3>
+                        <div class="bt-facts">
+                            <div class="bt-fact">
+                                <span class="k">Chữ Hán</span>
+                                <p class="v">Được du nhập và phát triển, trở thành công cụ ghi chép, văn học, khoa cử</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Nho giáo</span>
+                                <p class="v">Ảnh hưởng đến tư tưởng, đạo đức, giáo dục, tổ chức xã hội</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Phật giáo</span>
+                                <p class="v">Phát triển mạnh mẽ, góp phần hình thành bản sắc văn hóa tinh thần</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Kỹ thuật xây dựng</span>
+                                <p class="v">Kỹ thuật xây thành, đắp đê, xây chùa, đúc chuông</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Nông nghiệp</span>
+                                <p class="v">Kỹ thuật cày cấy, thủy lợi, trồng lúa nước phát triển</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bt-col-6">
+                        <h3 style="color: var(--bt-ink); font-size: 1.3rem; margin-bottom: 1rem;">⚠️ Ảnh hưởng tiêu cực</h3>
+                        <div class="bt-facts">
+                            <div class="bt-fact">
+                                <span class="k">Đồng hóa</span>
+                                <p class="v">Chính sách đồng hóa mạnh mẽ, xóa bỏ bản sắc dân tộc</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Bóc lột</span>
+                                <p class="v">Chính sách thuế khóa nặng nề, cướp đoạt tài nguyên</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Phân biệt</span>
+                                <p class="v">Chính sách phân biệt đối xử giữa người Hán và người Việt</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Kiểm soát</span>
+                                <p class="v">Kiểm soát chặt chẽ tư tưởng, văn hóa, giáo dục</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bt-grid" style="margin-top: 2rem;">
+                    <div class="bt-col-12">
+                        <h3 style="color: var(--bt-ink); font-size: 1.3rem; margin-bottom: 1rem;">🔄 Sự giao thoa và bản sắc</h3>
+                        <div class="bt-facts">
+                            <div class="bt-fact">
+                                <span class="k">Chọn lọc tiếp thu</span>
+                                <p class="v">Người Việt biết chọn lọc, tiếp thu có chọn lọc những tinh hoa văn hóa</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Bảo tồn bản sắc</span>
+                                <p class="v">Vẫn giữ gìn được bản sắc văn hóa dân tộc, phong tục tập quán</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Sáng tạo độc lập</span>
+                                <p class="v">Sáng tạo ra những giá trị văn hóa độc lập, đặc sắc</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Hòa nhập nhưng không hòa tan</span>
+                                <p class="v">Hòa nhập với văn hóa lớn nhưng không đánh mất bản sắc riêng</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nhân vật -->
+    <section class="bt-section" id="nhan-vat">
+        <div class="container">
+            <div class="bt-panel">
+                <h2 class="bt-section-title">Những nhân vật tiêu biểu</h2>
+                <p class="bt-lead">
+                    Thời Bắc thuộc đã sản sinh ra những anh hùng, danh nhân có công lao to lớn trong sự nghiệp đấu tranh giành độc lập dân tộc.
+                </p>
+
+                <div class="bt-cards">
+                    <div class="bt-card">
+                        <h3>👑 Hai Bà Trưng (Trưng Trắc - Trưng Nhị)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 40-43<br>
+                            <strong>Công lao:</strong> Lãnh đạo cuộc khởi nghĩa đầu tiên giành lại độc lập<br>
+                            <strong>Ý nghĩa:</strong> Khẳng định tinh thần bất khuất, khát vọng độc lập<br>
+                            <strong>Tưởng niệm:</strong> Đền thờ Hai Bà Trưng khắp cả nước
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>🛡️ Bà Triệu (Triệu Thị Trinh)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 248<br>
+                            <strong>Công lao:</strong> Lãnh đạo khởi nghĩa chống quân Đông Ngô<br>
+                            <strong>Ý nghĩa:</strong> Khẳng định vai trò của phụ nữ trong lịch sử<br>
+                            <strong>Tưởng niệm:</strong> Đền thờ Bà Triệu ở Thanh Hóa
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>🌾 Lý Bôn (Lý Nam Đế)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 542-602<br>
+                            <strong>Công lao:</strong> Lãnh đạo khởi nghĩa, lập nên nước Vạn Xuân<br>
+                            <strong>Ý nghĩa:</strong> Lập nên nhà nước độc lập đầu tiên<br>
+                            <strong>Tưởng niệm:</strong> Đền thờ Lý Bôn ở nhiều nơi
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>⚔️ Mai Thúc Loan</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 722<br>
+                            <strong>Công lao:</strong> Lãnh đạo khởi nghĩa chống quân Đường<br>
+                            <strong>Ý nghĩa:</strong> Thể hiện sức mạnh của nhân dân lao động<br>
+                            <strong>Tưởng niệm:</strong> Đền thờ Mai Thúc Loan ở Hà Tĩnh
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>🛡️ Phùng Hưng (Bố Cái Đại Vương)</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 766-791<br>
+                            <strong>Công lao:</strong> Lãnh đạo khởi nghĩa, được nhân dân suy tôn<br>
+                            <strong>Ý nghĩa:</strong> Thể hiện uy tín và ảnh hưởng sâu rộng<br>
+                            <strong>Tưởng niệm:</strong> Đền thờ Phùng Hưng ở Hà Nội
+                        </p>
+                    </div>
+
+                    <div class="bt-card">
+                        <h3>🌟 Ngô Quyền</h3>
+                        <p>
+                            <strong>Thời gian:</strong> 931-938<br>
+                            <strong>Công lao:</strong> Lãnh đạo khởi nghĩa, chiến thắng Bạch Đằng<br>
+                            <strong>Ý nghĩa:</strong> Chấm dứt hơn 1000 năm Bắc thuộc<br>
+                            <strong>Tưởng niệm:</strong> Đền thờ Ngô Quyền khắp cả nước
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Di sản -->
+    <section class="bt-section" id="di-san">
+        <div class="container">
+            <div class="bt-panel">
+                <h2 class="bt-section-title">Di sản văn hóa và lịch sử</h2>
+                <p class="bt-lead">
+                    Thời Bắc thuộc để lại nhiều di sản văn hóa, lịch sử có giá trị to lớn trong việc nghiên cứu và bảo tồn bản sắc dân tộc.
+                </p>
+
+                <div class="bt-grid">
+                    <div class="bt-col-6">
+                        <h3 style="color: var(--bt-ink); font-size: 1.3rem; margin-bottom: 1rem;">🏛️ Di tích lịch sử</h3>
+                        <div class="bt-facts">
+                            <div class="bt-fact">
+                                <span class="k">Thành Cổ Loa</span>
+                                <p class="v">Di tích thời An Dương Vương, biểu tượng của nền văn minh cổ</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Đền Hai Bà Trưng</span>
+                                <p class="v">Nhiều nơi trên cả nước, tưởng niệm công lao Hai Bà Trưng</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Đền Bà Triệu</span>
+                                <p class="v">Thanh Hóa, tưởng niệm công lao Bà Triệu</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Chiến trường Bạch Đằng</span>
+                                <p class="v">Quảng Ninh, nơi diễn ra chiến thắng lịch sử</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bt-col-6">
+                        <h3 style="color: var(--bt-ink); font-size: 1.3rem; margin-bottom: 1rem;">📚 Di sản văn hóa</h3>
+                        <div class="bt-facts">
+                            <div class="bt-fact">
+                                <span class="k">Chữ Hán</span>
+                                <p class="v">Di sản văn hóa, công cụ ghi chép, văn học</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Chùa chiền</span>
+                                <p class="v">Nhiều ngôi chùa cổ được xây dựng thời kỳ này</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Truyện kể dân gian</span>
+                                <p class="v">Nhiều truyện kể về các anh hùng thời Bắc thuộc</p>
+                            </div>
+                            <div class="bt-fact">
+                                <span class="k">Lễ hội truyền thống</span>
+                                <p class="v">Nhiều lễ hội tưởng niệm các anh hùng dân tộc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nguồn -->
+    <section class="bt-section" id="nguon">
+        <div class="container">
+            <div class="bt-panel">
+                <h2 class="bt-section-title">Nguồn tham khảo chính thống</h2>
+                <ul class="bt-sources">
+                    <li>
+                        <a href="https://baotanglichsu.vn/vi/Articles/4043/nha-nuoc-van-lang-au-lac" target="_blank" rel="noopener noreferrer">
+                            Bảo tàng Lịch sử Quốc gia: "Thời kỳ Bắc thuộc"
+                        </a>
+                        <span class="meta">Tổng quan về thời kỳ Bắc thuộc, các triều đại đô hộ và các cuộc khởi nghĩa.</span>
+                    </li>
+                    <li>
+                        <a href="https://vi.wikipedia.org/wiki/Th%E1%BB%9Di_B%E1%BA%AFc_Thu%E1%BB%99c" target="_blank" rel="noopener noreferrer">
+                            Wikipedia: "Thời Bắc thuộc"
+                        </a>
+                        <span class="meta">Thông tin tổng hợp về thời kỳ Bắc thuộc, các triều đại và sự kiện lịch sử.</span>
+                    </li>
+                    <li>
+                        <a href="https://www.vietnam.gov.vn/portal/page/portal/chinhphu/hethongvanban" target="_blank" rel="noopener noreferrer">
+                            Cổng thông tin điện tử Chính phủ
+                        </a>
+                        <span class="meta">Các tài liệu, văn bản chính thức về lịch sử Việt Nam.</span>
+                    </li>
+                    <li>
+                        <a href="https://www.vass.gov.vn/" target="_blank" rel="noopener noreferrer">
+                            Viện Hàn lâm Khoa học Xã hội Việt Nam
+                        </a>
+                        <span class="meta">Các công trình nghiên cứu, khảo cổ học về thời kỳ Bắc thuộc.</span>
+                    </li>
+                </ul>
+                <p class="bt-inline-note">
+                    Các thông tin trong bài được tổng hợp từ các nguồn sử liệu chính thống, công trình nghiên cứu lịch sử
+                    và khảo cổ học. Nếu bạn muốn bổ sung thêm hình ảnh minh họa, hiện vật hoặc thông tin chi tiết hơn,
+                    mình có thể cập nhật theo yêu cầu.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bảo Tàng Lịch Sử Việt Nam. Bảo Tồn Di Sản - Nơi Lịch Sử Sống.</p>
+    </footer>
+
+    <script src="../../js/navigation.js"></script>
+</body>
+</html>
