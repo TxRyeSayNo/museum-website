@@ -12,17 +12,17 @@
 .pk-hero {
   position: relative;
   overflow: hidden;
-  padding: 90px 0 48px;
+  padding: 50px 0 48px 30px;
+  min-height: 80vh;
 }
 
 .pk-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    url("../assets/images/vua-hung-vuong-1536x922.jpg");
+  background:url("../assets/images/phongkien.png");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   transform: scale(1.02);
   z-index: 0;
 }
@@ -43,7 +43,7 @@
   color: rgba(255, 255, 255, 0.92);
   font-weight: 600;
   font-size: 0.9rem;
-  margin-bottom: 16px;
+  margin-bottom: 50px;
 }
 
 .pk-breadcrumb a {
@@ -61,7 +61,7 @@
   font-weight: 800;
   letter-spacing: 0.2px;
   line-height: 1.12;
-  margin-bottom: 14px;
+  margin-bottom: 100px;
   text-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
 }
 
@@ -128,13 +128,13 @@
 .pk-section-title {
   font-size: 1.6rem;
   font-weight: 800;
-  color: var(--pk-ink);
+  color: white;
   margin-bottom: 14px;
   font-family: "Times New Roman", serif;
 }
 
 .pk-lead {
-  color: var(--pk-muted);
+  color: white;
   line-height: 1.75;
   margin: 0;
 }
@@ -268,7 +268,7 @@
 
 .pk-inline-note {
   font-size: 0.92rem;
-  color: var(--pk-muted);
+  color: white;
   margin-top: 10px;
 }
 

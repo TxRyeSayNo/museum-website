@@ -22,9 +22,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  background:url("../assets/images/nen3.png");
+  background:url("../assets/images/ngoquyen.png");
   background-size: cover;
-  background-position:center center;
+  background-position:top center;
   transform: scale(1.02);
   z-index: 0;
 }
