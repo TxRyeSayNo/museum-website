@@ -1,0 +1,296 @@
+/* CSS cho trang Thời Phong Kiến Việt Nam */
+
+:root {
+  --pk-ink: #2c1810;
+  --pk-muted: rgba(44, 24, 16, 0.72);
+  --pk-paper: rgba(255, 255, 255, 0.92);
+  --pk-line: rgba(44, 24, 16, 0.14);
+  --pk-gold: #ffd54f;
+}
+
+
+.pk-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 0 48px;
+}
+
+.pk-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    url("../assets/images/vua-hung-vuong-1536x922.jpg");
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.02);
+  z-index: 0;
+}
+
+.pk-hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.pk-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.25);
+  color: rgba(255, 255, 255, 0.92);
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.pk-breadcrumb a {
+  color: rgba(255, 255, 255, 0.92);
+  text-decoration: none;
+}
+
+.pk-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.pk-title {
+  color: #fff;
+  font-size: clamp(2.1rem, 4vw, 3.4rem);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 1.12;
+  margin-bottom: 14px;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
+}
+
+.pk-subtitle {
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 860px;
+  margin-bottom: 18px;
+  text-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+}
+
+.pk-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.pk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.pk-chip:hover {
+  transform: translateY(-1px);
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.pk-section {
+  position: relative;
+  padding: 42px 0;
+}
+
+.pk-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.pk-panel {
+  background: var(--pk-paper);
+  border: 1px solid var(--pk-line);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.12);
+  background-image:
+  linear-gradient(
+            135deg,
+            rgba(60, 40, 25, 0.25),
+            rgba(120, 90, 60, 0.35)
+        ), url("../assets/images/z7474903426349_f1cd67888dedf7df463e36eff205fa4f.jpg");
+}
+
+.pk-section-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--pk-ink);
+  margin-bottom: 14px;
+  font-family: "Times New Roman", serif;
+}
+
+.pk-lead {
+  color: var(--pk-muted);
+  line-height: 1.75;
+  margin: 0;
+}
+
+.pk-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 18px;
+}
+
+.pk-col-7 { grid-column: span 7; }
+.pk-col-5 { grid-column: span 5; }
+.pk-col-6 { grid-column: span 6; }
+.pk-col-4 { grid-column: span 4; }
+.pk-col-12 { grid-column: span 12; }
+
+.pk-facts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.pk-fact {
+  border: 1px solid var(--pk-line);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 12px 14px;
+}
+
+.pk-fact .k {
+  display: block;
+  font-weight: 800;
+  color: var(--pk-ink);
+  margin-bottom: 4px;
+}
+
+.pk-fact .v {
+  color: var(--pk-muted);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.pk-image-card {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--pk-line);
+  box-shadow: 0 16px 55px rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+.pk-image-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.pk-image-caption {
+  padding: 10px 12px;
+  font-size: 0.9rem;
+  color: var(--pk-muted);
+  border-top: 1px solid var(--pk-line);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.pk-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.pk-card {
+  border: 1px solid var(--pk-line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 16px 16px 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pk-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14);
+}
+
+.pk-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  color: var(--pk-ink);
+  font-weight: 800;
+}
+
+.pk-card p {
+  margin: 0;
+  color: var(--pk-muted);
+  line-height: 1.7;
+  font-size: 0.96rem;
+}
+
+.pk-sources {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.pk-sources li {
+  border: 1px solid var(--pk-line);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.pk-sources a {
+  color: var(--primary, #d32f2f);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.pk-sources a:hover {
+  text-decoration: underline;
+}
+
+.pk-sources .meta {
+  display: block;
+  color: var(--pk-muted);
+  margin-top: 4px;
+  line-height: 1.55;
+}
+
+.pk-inline-note {
+  font-size: 0.92rem;
+  color: var(--pk-muted);
+  margin-top: 10px;
+}
+
+@media (max-width: 992px) {
+  .pk-col-7,
+  .pk-col-5,
+  .pk-col-6,
+  .pk-col-4 {
+    grid-column: span 12;
+  }
+
+  .pk-image-card img {
+    height: 280px;
+  }
+
+  .pk-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .pk-facts {
+    grid-template-columns: 1fr;
+  }
+}
