@@ -332,6 +332,12 @@ footer {
     padding-bottom: 50px;
 }
 
+.hero-right-context{
+    text-align: center;
+    padding-bottom: 50px;
+    color: #FFD54F ;
+    font-size: 150%;
+}
 /* Cho video to hẳn ra */
 .video-container {
     width: 100%;
