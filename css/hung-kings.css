@@ -12,17 +12,18 @@
 .hk-hero {
   position: relative;
   overflow: hidden;
-  padding: 50px 0 48px 30px;
-  min-height: 80vh;
+  padding: 90px 0 48px;
 }
 
 .hk-hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:url("../assets/images/nenvuahung.png");
+  background:
+   
+    url("../assets/images/vua-hung-vuong-1536x922.jpg");
   background-size: cover;
-  background-position:top center;
+  background-position: center;
   transform: scale(1.02);
   z-index: 0;
 }
@@ -43,7 +44,7 @@
   color: rgba(255, 255, 255, 0.92);
   font-weight: 600;
   font-size: 0.9rem;
-  margin-bottom: 50px;
+  margin-bottom: 16px;
 }
 
 .hk-breadcrumb a {
@@ -61,7 +62,7 @@
   font-weight: 800;
   letter-spacing: 0.2px;
   line-height: 1.12;
-  margin-bottom: 100px;
+  margin-bottom: 14px;
   text-shadow: 0 8px 28px rgba(0, 0, 0, 0.5);
 }
 
@@ -130,13 +131,13 @@
 .hk-section-title {
   font-size: 1.6rem;
   font-weight: 800;
-  color: white;
+  color: var(--hk-ink);
   margin-bottom: 14px;
   font-family: "Times New Roman", serif;
 }
 
 .hk-lead {
-  color: white;
+  color: var(--hk-muted);
   line-height: 1.75;
   margin: 0;
 }
@@ -198,7 +199,7 @@
 .hk-image-caption {
   padding: 10px 12px;
   font-size: 0.9rem;
-  color: black;
+  color: var(--hk-muted);
   border-top: 1px solid var(--hk-line);
   background: rgba(255, 255, 255, 0.85);
 }
@@ -270,7 +271,7 @@
 
 .hk-inline-note {
   font-size: 0.92rem;
-  color: white;
+  color: var(--hk-muted);
   margin-top: 10px;
 }
 
